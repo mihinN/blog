@@ -12,7 +12,7 @@ keywords:
 
 ## まとめ
 
-`encodeURI()`と`encodeURIComponent()`はRFC 2396準拠である。
+`encodeURI()`と`encodeURIsdsdComponent()`はRFC 2396準拠である。
 `encodeURI()` は完全な URI を表すのに必要な文字 (Reserved Characters) はエンコードしません。
 また、予約されていないが "そのまま" URI に使用できる(Unreserved Marks) 文字をエンコードしません。
 `encodeURIComponent()` は "Unreserved Marks" 文字をエンコードしません。
