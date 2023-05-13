@@ -1,46 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Melk0reWasHere</title>
-    <link>https://mihinn.github.io/blog/tags/</link>
-    <description>Recent content in Tags on Melk0reWasHere</description>
+    <title>Tags on 0xMelK0reWa5Here</title>
+    <link>https://mihiN.github.io/blog/tags/</link>
+    <description>Recent content in Tags on 0xMelK0reWa5Here</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Melk0reWasHere</copyright>
-    <lastBuildDate>Mon, 17 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mihinn.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mihiN.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Infosec</title>
-      <link>https://mihinn.github.io/blog/tags/infosec/</link>
+      <link>https://mihiN.github.io/blog/tags/infosec/</link>
       <pubDate>Mon, 17 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://mihinn.github.io/blog/tags/infosec/</guid>
+      <guid>https://mihiN.github.io/blog/tags/infosec/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Networking 101</title>
-      <link>https://mihinn.github.io/blog/tags/networking-101/</link>
+      <link>https://mihiN.github.io/blog/tags/networking-101/</link>
       <pubDate>Mon, 17 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://mihinn.github.io/blog/tags/networking-101/</guid>
+      <guid>https://mihiN.github.io/blog/tags/networking-101/</guid>
       <description></description>
     </item>
     
     <item>
       <title>C language 101</title>
-      <link>https://mihinn.github.io/blog/tags/c-language-101/</link>
+      <link>https://mihiN.github.io/blog/tags/c-language-101/</link>
       <pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://mihinn.github.io/blog/tags/c-language-101/</guid>
+      <guid>https://mihiN.github.io/blog/tags/c-language-101/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Google CrowdSource</title>
-      <link>https://mihinn.github.io/blog/tags/google-crowdsource/</link>
+      <link>https://mihiN.github.io/blog/tags/google-crowdsource/</link>
       <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://mihinn.github.io/blog/tags/google-crowdsource/</guid>
+      <guid>https://mihiN.github.io/blog/tags/google-crowdsource/</guid>
       <description></description>
     </item>
     
