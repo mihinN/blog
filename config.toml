@@ -6,7 +6,7 @@ title = '0xMelK0reWa5Here'
 # Main menu which appears below site header.
 [[menu.main]]
 name = "Home"
-url = "/blog/"
+url = "/"
 weight = 1
 
 [[menu.main]]
