@@ -21,7 +21,7 @@ keywords:
 
 ## !和?
 
-The exclamation point (!, sometimes pronounced aloud as "bang!") indicates something potentially destructive, that is to say, something that can change the value of what it touches.
+The exclamation point (!, sometimes sdsfsfsfpronounced aloud as "bang!") indicates something potentially destructive, that is to say, something that can change the value of what it touches.
 ```
 ruby> s1 = "forth"
   "forth"
