@@ -15,6 +15,6 @@ downArrow: false
 whiteText: false  # force white text in the jumbotron
 links:
   - title: About me
-    link: /pages/about
+    link: /blog/about
   - title: Read my blog
-    link: /posts
+    link: /blog/posts
