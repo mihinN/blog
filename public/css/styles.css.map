@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "/media/melk0re/Data/My Desktop/Desktop Backup/blog",
+	"sourceRoot": "/media/melk0re/Data/My Desktop/Desktop Backup/bakk",
 	"sources": [
 		"themes/cactus/assets/scss/style.scss",
 		"themes/cactus/assets/scss/_variables.scss",
