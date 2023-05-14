@@ -2,6 +2,10 @@
 <html class="home" lang="en"><head>
 	<meta name="generator" content="Hugo 0.110.0">
     
+        <script>
+            if (location.host != new URL("https:\/\/mihinn.github.io\/blog\/").host) location.href = "https:\/\/mihinn.github.io\/blog\/"
+        </script>
+    
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
@@ -28,7 +32,7 @@
 
 <title>
         
-        My nice blog
+        Melk0reWasHere
     </title>
 
     
@@ -36,23 +40,21 @@
     <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
 
     
-        <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
     
-    
-    <link type="text/css" rel="stylesheet" href=https://mihinn.github.io/blog/css/styles.abbd6311bb4b6ca58f8e7398140529245ae0f6428b759fcd830742eee2619eabb900ba9914a9affb82aa9a16a9b9ea727bb315315a976a0db0e7513a5f12c504.css integrity="sha512-q71jEbtLbKWPjnOYFAUpJFrg9kKLdZ/NgwdC7uJhnqu5ALqZFKmv&#43;4Kqmhapuepye7MVMVqXag2w51E6XxLFBA==" />
-<meta name="author" content="Gabriele Musco" />
+    <link type="text/css" rel="stylesheet" href=https://mihinn.github.io/blog/css/styles.233f87050de5e149f7e14a8491e84227ae342fb144ccd1e20ee385ad39ae1f1b4411373a5340b6a0db786e3dd69c8210ced0c2c8a48d3a032953e05f6a98d511.css integrity="sha512-Iz&#43;HBQ3l4Un34UqEkehCJ640L7FEzNHiDuOFrTmuHxtEETc6U0C2oNt4bj3WnIIQztDCyKSNOgMpU&#43;BfapjVEQ==" />
+<meta name="author" content="Mihin Nimnaka" />
 
     
-        <meta name="description" content="A description for my website" />
+        <meta name="description" content="Hi, I am Mihin, a 22 year old information security student from Sri Lanka. And studying at NSBM Green University. Currently I am working on my personal projects and I hope to bring those stuff in the near future." />
     
 
 <meta property="og:site_name"
-    content='My nice blog' />
+    content='Melk0reWasHere' />
 
     <meta property="og:title"
-        content='My nice blog' />
+        content='Melk0reWasHere' />
     
-        <meta property="og:description" content="A description for my website" />
+        <meta property="og:description" content="Hi, I am Mihin, a 22 year old information security student from Sri Lanka. And studying at NSBM Green University. Currently I am working on my personal projects and I hope to bring those stuff in the near future." />
     
     <meta property="og:type" content="blog" />
     <meta property="og:image"
@@ -66,9 +68,9 @@
 
 
     <meta name="twitter:title"
-        content='My nice blog' />
+        content='Melk0reWasHere' />
     
-        <meta name="twitter:description" content="A description for my website" />
+        <meta name="twitter:description" content="Hi, I am Mihin, a 22 year old information security student from Sri Lanka. And studying at NSBM Green University. Currently I am working on my personal projects and I hope to bring those stuff in the near future." />
     
     <meta name="twitter:image"
         content='https://mihinn.github.io/icon512.png' />
@@ -93,7 +95,7 @@
             <div class="rightOfLogo">
                 <div class="titleAndHamburger">
                     <h1>
-                        <a class="unstyledLink" href="/">My nice blog</a>
+                        <a class="unstyledLink" href="/">Melk0reWasHere</a>
                         
                     </h1>
                     
@@ -187,6 +189,76 @@
     </div>
     
 
+    
+    
+        <div class="video_container">
+            <video
+                class="jumbotron_video"
+                id="jumbotron_video"
+                src="/jumbotron_video.mp4"
+                playsinline
+                autoplay mute loop>
+                    
+                        <source src="/jumbotron_video.mp4" type="video/mp4">
+                    
+                    
+                        <source src="/jumbotron_video.webm" type="video/webm">
+                    
+            </video>
+        </div>
+    
+    <div class="jumbotron">
+        
+            <img src="/jumbotron_image.svg" />
+        
+        <div class="main_box">
+            <h2 class="
+                
+            ">My awesome website</h2>
+            <h3>Some fancy subtitle</h3>
+            
+                <ul id="play_button_container" style="display: none">
+                    <li>
+                        <a title="Play" style="border-radius: 100%; width: 32px; height: 32px; display: flex; justify-content: center; align-items: center;" class="shareBtn" onclick="playvideo();">  </a>
+                    </li>
+                </ul>
+                <script>
+                    var jumbotron_video = document.getElementById('jumbotron_video');
+                    var play_button_container = document.getElementById('play_button_container');
+                    window.onload = function() {
+                        setTimeout(function() {
+                            if (jumbotron_video.paused) {
+                                play_button_container.style.display = 'block';
+                            }
+                        }, 1000);
+                    };
+                    function playvideo() {
+                        jumbotron_video.play();
+                        play_button_container.style.display = 'none';
+                    }
+                </script>
+            
+            
+                <ul>
+                    
+                        <li>
+                            <a class="" href="/pages/about">
+                                About me
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="" href="/posts">
+                                Read my blog
+                            </a>
+                        </li>
+                    
+                </ul>
+            
+        </div>
+    </div>
+    
+
 </header>
 <div id="contentContainer">
                 <div id="content">
@@ -197,6 +269,8 @@
     
 
     <div class="postlist gridView">
+        
+            
         
             
         
@@ -354,8 +428,32 @@ int x=20 , y=30; ආකාරයට . struct තුලින් කරන්න�
                     </main><footer>
     <hr />
 
+    <div class="footerColumns">
+        
+            <ul class="notlist">
+                <li><strong>My other projects</strong></li>
+                
+                    <li><a target="_blank" href="https://hydrapaper.gabmus.org">HydraPaper</a></li>
+                
+                    <li><a target="_blank" href="https://gitlab.com/gabmus/ada-ui">Ada UI</a></li>
+                
+            </ul>
+        
+            <ul class="notlist">
+                <li><strong>About me</strong></li>
+                
+                    <li><a target="_blank" href="https://gabmus.org">My personal website</a></li>
+                
+                    <li><a target="_blank" href="https://gitlab.com/gabmus">My GitLab</a></li>
+                
+                    <li><a target="_blank" href="https://gitlab.gnome.org/gabmus">My GNOME GitLab</a></li>
+                
+            </ul>
+        
+    </div>
+
 <p><small>
-        2023 &copy; Some copyright notice - <a href="https://example.com/license">my license</a>
+        2023 &copy; Mihin Nimnaka - <a href="https://example.com/license">my license</a>
     </small></p>
     <p><small>
         <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
@@ -364,24 +462,6 @@ int x=20 , y=30; ආකාරයට . struct තුලින් කරන්න�
 </div>
             </div>
         </div>
-    
-        <script
-            async
-            defer
-            data-domain="example.com"
-            src="https://something.com/..."
-        ></script>
-    
-
-
-    
-        <script
-            async
-            defer
-            data-website-id="example-tracking-code"
-            src="https://something.com/..."
-        ></script>
-    
 
 
 </body>
