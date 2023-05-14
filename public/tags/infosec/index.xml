@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Infosec on My New Hugo Site</title>
-    <link>http://example.org/tags/infosec/</link>
-    <description>Recent content in Infosec on My New Hugo Site</description>
+    <title>Infosec on Melk0reWasHere</title>
+    <link>https:mihinn.github.io/blog/tags/infosec/</link>
+    <description>Recent content in Infosec on Melk0reWasHere</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Mihin Nimnaka</copyright>
+    <lastBuildDate>Mon, 17 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https:mihinn.github.io/blog/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Intrusion Detection &amp; Preventing Systems.</title>
-      <link>http://example.org/posts/2023-04-17-ids_research/</link>
+      <link>https:mihinn.github.io/blog/posts/2023-04-17-ids_research/</link>
       <pubDate>Mon, 17 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2023-04-17-ids_research/</guid>
+      <guid>https:mihinn.github.io/blog/posts/2023-04-17-ids_research/</guid>
       <description>Download My report !!Link will available soon!!</description>
     </item>
     

@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>C language 101 on My New Hugo Site</title>
-    <link>http://example.org/tags/c-language-101/</link>
-    <description>Recent content in C language 101 on My New Hugo Site</description>
+    <title>C language 101 on Melk0reWasHere</title>
+    <link>https:mihinn.github.io/blog/tags/c-language-101/</link>
+    <description>Recent content in C language 101 on Melk0reWasHere</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/c-language-101/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Mihin Nimnaka</copyright>
+    <lastBuildDate>Sat, 12 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https:mihinn.github.io/blog/tags/c-language-101/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Structs in C language / සිංහල</title>
-      <link>http://example.org/posts/2022-11-12-structs-in-c-language-sinhala/</link>
+      <link>https:mihinn.github.io/blog/posts/2022-11-12-structs-in-c-language-sinhala/</link>
       <pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2022-11-12-structs-in-c-language-sinhala/</guid>
+      <guid>https:mihinn.github.io/blog/posts/2022-11-12-structs-in-c-language-sinhala/</guid>
       <description>Structs ගැන , Structs , C language එකේ විශේෂ ස්ථානයක් ගන්නවා , එයට හේතුව , අපි දන්නවා අපිට programme එක තුල අවශ්‍ය දෙයක් computer memory එකේ තබා ගැනීමට අවශ්‍ය වූ විට සිදු කරන්නේ , variable එකක් create කරන එක. උදාහරණයක් විදියට ගත්තොත් ..
 int x=20 , y=30; ආකාරයට . struct තුලින් කරන්නෙත් මේ හා සමාන ක්‍රියාවලියක් (ඒ කියන්නේ memory එකට acces කිරීමක්) . හැබැයි මෙහි වෙනස් කමක් දක්නට පුළුවන්, ඒ .</description>
     </item>
