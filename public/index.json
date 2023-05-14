@@ -1,0 +1,24 @@
+
+{
+    
+    
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+        
+        
+        
+    
+    "articles": [{"date":"0001-01-01","image":"","imageAlt":"","link":"https://example.com/manifest/index.json","summary":"","tags":[],"title":"Manifest"},{"date":"0001-01-01","image":"","imageAlt":"","link":"https://example.com/search/","summary":"","tags":[],"title":"Search"}],
+    "test": "Manifest   Search   ",
+    "page": "1",
+    "next": ""
+}
+
