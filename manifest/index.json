@@ -17,13 +17,13 @@
     ,
     "icons": [
       {
-        "src": "/images/logo.png",
+        "src": "../images/logo.png",
         "sizes": "512x512",
         "type": "image/png",
         "purpose": "maskable"
       },
       {
-        "src": "/images/logo.png",
+        "src": "../images/logo.png",
         "sizes": "512x512",
         "type": "image/png",
         "purpose": "any"
