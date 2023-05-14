@@ -1,10 +1,10 @@
 title: Melk0reWasHere
 hugeTitle: false
-subtitle: servents of melkore
+subtitle: servents of Morgoth
 image: "https://i.pinimg.com/originals/7c/5a/92/7c5a9260f8eafb0457ae667dbc503568.jpg"
 imagePosition: left  # values: left, right, top, bottom
-background: "https://img.freepik.com/free-vector/savannah-landscape-with-acacia-trees-night-vector-cartoon-illustration-african-savanna-with-full-moon-stars-dark-sky-concept-safari-vacation-trip-travel_107791-11532.jpg?w=1800&t=st=1684098389~exp=1684098989~hmac=6f81d5af16398fe54046d53c2cc71ce99a9e19fe5cff73760c13ce3e2ba3fa25"
-backgroundVideo: "https://www.youtube.com/watch?v=ZuHLyviVamA"  # will replace the background image
+background: /img/jumbotron_bg.png
+backgroundVideo: /jumbotron_video.mp4  # will replace the background image
 # it's best to provide both an mp4 and a web source for the video for better compatibility
 backgroundVideoMp4: /jumbotron_video.mp4
 backgroundVideoWebm: /jumbotron_video.webm
