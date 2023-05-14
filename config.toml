@@ -1,20 +1,20 @@
 baseURL = "https://mihinn.github.io/blog/"
-title = "My nice blog"
+title = "Melk0reWasHere"
 languageCode = "en"
 defaultContentLanguage = "en"
 
 # this will be included in the footer after the current year the site is last
 # built, followed by the (c) symbol
 # you can use markdown inside this field
-copyright = "Some copyright notice - [my license](https://example.com/license)"
+copyright = "Mihin Nimnaka - [my license](https://example.com/license)"
 
 paginate = 5  # number of articles per page in the index
 summaryLength = 70  # number of words for article summaries
 
 
 [params]
-    author = "Gabriele Musco"
-    description = "A description for my website"  # this will be added as metadata
+    author = "Mihin Nimnaka"
+    description = "Hi, I am Mihin, a 22 year old information security student from Sri Lanka. And studying at NSBM Green University. Currently I am working on my personal projects and I hope to bring those stuff in the near future."  # this will be added as metadata
 
     posts = "posts"  # content directory where to find home page posts; default searches in "posts" and "post"
     showPostsLink = true  # show or hide the link to the simple post list
@@ -74,21 +74,7 @@ summaryLength = 70  # number of words for article summaries
 
     underlineTitleLinks = false  # show an underline also for links that are titles
 
-    # enable comments support with commento using the script from your server
-    commento = "https://example.com/js/commento.js"
 
-    # enable comments support with cactus comments (cactus.chat)
-    cactusCommentsSiteName = "example.com"
-    cactusCommentsServerName = "cactus.chat"
-    cactusCommentsHomeserver = "https://matrix.cactus.chat:8448"
-
-    # enable analytics using Plausible
-    plausibleScriptUrl = "https://something.com/..."
-    plausibleDomain = "example.com"
-
-    # enable analytics using Umami
-    umamiScriptUrl = "https://something.com/..."
-    umamiWebsiteId = "example-tracking-code"
 
     enableShareOnFediverse = false  # enable a button at the end of an article to share it on the fediverse
     tocBeforeImage = false  # show the table of contents before the main article image; default false
@@ -111,11 +97,11 @@ summaryLength = 70  # number of words for article summaries
     # useful if deploying in gitlab pages with custom domain and don't want
     # the username.gitlab.io/website url to persist
     # this requires you to set baseURL (see above)
-    forceRedirect = false
+    forceRedirect = true
 
     infiniteScrolling = false  # activates infinite scrolling instead of regular pagination
-    enableFooterColumns = false  # activates footer columns, as described below
-    enableJumbotron = false  # enables jumbotron, as described below
+    enableFooterColumns = true  # activates footer columns, as described below
+    enableJumbotron = true  # enables jumbotron, as described below
     # related articles will be selected randomly based on tags and shown at
     # the bottom of the article, after the comments
     enableRelatedArticles = false
