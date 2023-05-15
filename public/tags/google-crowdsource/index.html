@@ -5,6 +5,11 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
 
+    
+        
+          <link href="https://mihinn.github.io/blog/tags/google-crowdsource/index.xml" rel="alternate" type="application/rss+xml" title="Melk0reWasHere" />
+          <link href="https://mihinn.github.io/blog/tags/google-crowdsource/index.xml" rel="feed" type="application/rss+xml" title="Melk0reWasHere" />
+        
     <link
     rel="icon"
     href='/favicon.png'
@@ -27,7 +32,7 @@
 
 <title>
         
-            Search  &ndash;
+            Google CrowdSource  &ndash;
         
         Melk0reWasHere
     </title>
@@ -37,52 +42,42 @@
     <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
 
     
+        <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+    
     
     <link type="text/css" rel="stylesheet" href=https://mihinn.github.io/blog/css/styles.abbd6311bb4b6ca58f8e7398140529245ae0f6428b759fcd830742eee2619eabb900ba9914a9affb82aa9a16a9b9ea727bb315315a976a0db0e7513a5f12c504.css integrity="sha512-q71jEbtLbKWPjnOYFAUpJFrg9kKLdZ/NgwdC7uJhnqu5ALqZFKmv&#43;4Kqmhapuepye7MVMVqXag2w51E6XxLFBA==" />
 <meta name="author" content="Gabriele Musco" />
 
     
-    
-        <meta name="description" content="" />
+        <meta name="description" content="A description for my website" />
     
 
 <meta property="og:site_name"
     content='Melk0reWasHere' />
 
-    <meta property="og:title" content="Search" />
-    <meta property="og:type" content="article" />
+    <meta property="og:title"
+        content='Melk0reWasHere' />
     
-    <meta
-        property="article:author" content="Gabriele Musco" />
-    <meta
-        property="article:published_time"
-        content='0001-01-01T00:00:00Z&#43;0000' />
+        <meta property="og:description" content="A description for my website" />
     
-    <meta property="og:url" content="https://mihinn.github.io/blog/search/" />
-    
-    
+    <meta property="og:type" content="blog" />
     <meta property="og:image"
-        content="https://mihinn.github.io/icon512.png" />
-    
-        <meta property="og:description" content="" />
-    
+        content='https://mihinn.github.io/icon512.png' />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:domain"
       content='mihinn.github.io/blog'
 />
-<meta property="twitter:url" content="https://mihinn.github.io/blog/search/" />
+<meta property="twitter:url" content="https://mihinn.github.io/blog/tags/google-crowdsource/" />
 
 
-    <meta name="twitter:title" content="Search" />
+    <meta name="twitter:title"
+        content='Melk0reWasHere' />
     
-    
+        <meta name="twitter:description" content="A description for my website" />
     
     <meta name="twitter:image"
-        content="https://mihinn.github.io/icon512.png" />
-    
-        <meta name="twitter:description" content="" />
-    
+        content='https://mihinn.github.io/icon512.png' />
 
 <link rel="manifest" href="/manifest/index.json" />
 </head>
@@ -128,7 +123,19 @@
 </div>
             </div>
         </div>
-        
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Search' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
     </div>
     <div id="links">
         <a
@@ -186,101 +193,32 @@
 <div id="contentContainer">
                 <div id="content">
                     <main>
-<noscript>
-    You need to enable JavaScript to be able to search.
-</noscript><div class="search">
-    <input id="searchbar" type="text" placeholder='Search' />
-    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
-</div>
-<script>
-    function newSearch() {
-        let term = searchbar.value.trim();
-        if (!term) return;
-        location.href = `/search?q=${term}`;
-    }
-    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
-</script>
-<div class="postlist " id="postlist">
-</div><script>
-    function renderTags(tags) {
-        if (tags.length <= 0) return '';
-        let res = `| <span title='Tags'> </span>`;
-        for (let tag of tags) {
-            //                                        regular space
-            res += `<a href="/tags/${tag}">#${tag}</a>&#32;`;
-        }
-        return res;
-    }
-    function renderImage(image, link, alt) {
-        if (!image) return '';
-        return `<a href="${link}"><img src="${image}" alt="${alt}" /></a>`;
-    }
-    function renderSingleArticle(article) {
-        return `
-        <article class="card postlistitem">
-            <div>
-                <h2>
-                    <a href="${article.link}">${article.title}</a>
-                </h2>
-                <p class="date">
-                    <span title='Date'> </span>
-                    ${article.date}
-                    
-                        ${renderTags(article.tags)}
-                    
-                </p>
-                
-                
-                    <div class="articlePreview">
-                        <p>${article.summary}</p>
-                        <p><a href="${article.link}">Continue reading </a></p>
-                    </div>
-                
-            </div>
-            <hr />
-        </article>
-        `;
-    }
-    function renderArticles(articles) {
-        let rendered = articles.map(a => renderSingleArticle(a)).join('\n');
-        document.getElementById('postlist').innerHTML += rendered;
-    }
-</script>
-<script>
-    function matchTags(page, term) {
-        for (let tag of page.tags) {
-            if (tag.includes(term)) return true;
-        }
-        return false;
-    }
-    function performSearch(term) {
-        document.getElementById('postlist').innerHTML = '';
-        term = term.toLowerCase();
-        fetch('/search/index.json').then(res => res.json())
-        .then(res => {
-            let articles = res.pages.filter(page => (
-                page.title.toLowerCase().includes(term) ||
-                matchTags(page, term) ||
-                page.text.includes(term)
-            ));
-            if (articles.length > 0) renderArticles(articles);
-            else document.getElementById('postlist').innerHTML = `
-                <h3>No results found</h3>
-            `;
-        });
-    }
-    var url = location.href;
-    var baseUrl = url.split('?')[0];
-    var searchbar = document.getElementById('searchbar');
-    if (url.includes('?')) {
-        var urlParams = new URLSearchParams(url.split('?')[1]);
-        if (urlParams.has('q')) {
-            let searchTerm = urlParams.get('q');
-            searchbar.value = searchTerm;
-            performSearch(searchTerm);
-        }
-    }
-</script>
+    <h2>
+    
+    
+    
+    
+        Tag: #Google CrowdSource
+    
+</h2>
+<ul class="list">
+    
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-08-20
+
+</span>
+                    <span>
+                        <a href="https://mihinn.github.io/blog/posts/2020-08-20-google-crowdsource/">Google CrowdSource / සිංහල</a>
+                    </span>
+                </div>
+            </li>
+        
+    
+</ul>
+
 
                     </main><footer>
     <hr />

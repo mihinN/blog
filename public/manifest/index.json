@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "My nice blog",
-  "short_name": "My nice blog",
+  "name": "Melk0reWasHere",
+  "short_name": "Melk0reWasHere",
   "start_url": "/",
   "display": "standalone",
   
