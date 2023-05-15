@@ -25,15 +25,15 @@ summaryLength = 70  # number of words for article summaries
     # requires setting `homeSinglePage`
     # goes well with extraContentDirs
     showSinglePageAsHome = false
-    homeSinglePage = "/home"
+    homeSinglePage = "/blog"
 
     # It's best to put these icons in the "static" folder of your site
-    logo = ""
-    favicon = ""  # 32x32
-    faviconIco = "/"  # 32x32
-    appletouch = ""  # 180x180
-    svgicon = ""
-    icon512 = ""  # 512x512 png image
+    logo = "../fav.png"
+    favicon = "fav.ico"  # 32x32
+    faviconIco = "fav.ico"  # 32x32
+    appletouch = "fav.png"  # 180x180
+    svgicon = "fav.ico"
+    icon512 = "fav.png"  # 512x512 png image
 
     logoRightOfTitle = false  # positions the logo to the right of the title; default: false
 
