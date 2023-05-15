@@ -12,7 +12,7 @@
         
         
     
-    "articles": [{"date":"0001-01-01","image":"","imageAlt":"","link":"https://example.com/search/","summary":"","tags":[],"title":"Search"}],
+    "articles": [{"date":"0001-01-01","image":"","imageAlt":"","link":"https://mihinn.github.io/blog/search/","summary":"","tags":[],"title":"Search"}],
     "test": "Intrusion Detection & Preventing Systems.   Structs in C language / සිංහල   History of Hosts.txt File   Google CrowdSource / සිංහල   Manifest   Search   ",
     "page": "2",
     "next": ""

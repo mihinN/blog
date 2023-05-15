@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Networking 101 on My nice blog</title>
-    <link>https://example.com/tags/networking-101/</link>
-    <description>Recent content in Networking 101 on My nice blog</description>
+    <title>Networking 101 on Melk0reWasHere</title>
+    <link>https://mihinn.github.io/blog/tags/networking-101/</link>
+    <description>Recent content in Networking 101 on Melk0reWasHere</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>Some copyright notice - [my license](https://example.com/license)</copyright>
-    <lastBuildDate>Mon, 17 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/networking-101/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Mihin Nimnaka</copyright>
+    <lastBuildDate>Mon, 17 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mihinn.github.io/blog/tags/networking-101/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Intrusion Detection &amp; Preventing Systems.</title>
-      <link>https://example.com/posts/2023-04-17-ids_research/</link>
+      <link>https://mihinn.github.io/blog/posts/2023-04-17-ids_research/</link>
       <pubDate>Mon, 17 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/posts/2023-04-17-ids_research/</guid>
+      <guid>https://mihinn.github.io/blog/posts/2023-04-17-ids_research/</guid>
       <description>Download My report !!Link will available soon!!</description>
     </item>
     
     <item>
       <title>History of Hosts.txt File</title>
-      <link>https://example.com/posts/2022-11-03-history-of-hosttxt/</link>
+      <link>https://mihinn.github.io/blog/posts/2022-11-03-history-of-hosttxt/</link>
       <pubDate>Sun, 02 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/posts/2022-11-03-history-of-hosttxt/</guid>
+      <guid>https://mihinn.github.io/blog/posts/2022-11-03-history-of-hosttxt/</guid>
       <description>පරිගණක ජාලයක් ගත්තම ඒ සියල්ල සම්බන්ද වෙලා තියෙන්නේ ip address වලින් .. නමක් එහෙමත් නැත්නම් domain name එකක් යොදා ගැනීමේ අවශ්‍යතාවයක් නැහැ , නමුත් අපේ පහසුවට අපි ඉලක්කම් මතක තියා ගැනීමේ අපහසු තාවය නිසා නම් බාවිතා කරනවා , google.com , facebook.com , amazon.com වගේ . පරිගණක ජාලකරණයේ ආරම්බක කාලයේ මිනිස්සු ip address ටික කොලේක print කරලා ඩෙස්ක් එකේ තමන් ලගින් අලව ගත්ත … ඔන්න ඔය කාලෙට පස්සේ , ඊට පසුව තමයි මෙය යොදා , කොට Domain name servers යොදා ගැනීමක් සිදු නැහැ ගන්නේ,සරලවම මේක phone book එකක් වගේ ip address එක පැත්තක සහ නම අනෙක් පැත්තේ තියෙනවා , සරලයි</description>
     </item>
     
