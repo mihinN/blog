@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on My nice blog</title>
-    <link>https://example.com/categories/</link>
-    <description>Recent content in Categories on My nice blog</description>
+    <title>Categories on Melk0reWasHere</title>
+    <link>https://mihinn.github.io/blog/categories/</link>
+    <description>Recent content in Categories on Melk0reWasHere</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>Some copyright notice - [my license](https://example.com/license)</copyright><atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Mihin Nimnaka</copyright><atom:link href="https://mihinn.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

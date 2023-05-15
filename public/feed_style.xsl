@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <meta charset="UTF-8"/>
         
-        <link type="text/css" rel="stylesheet" href="https://example.com/css/styles.abbd6311bb4b6ca58f8e7398140529245ae0f6428b759fcd830742eee2619eabb900ba9914a9affb82aa9a16a9b9ea727bb315315a976a0db0e7513a5f12c504.css" integrity="sha512-q71jEbtLbKWPjnOYFAUpJFrg9kKLdZ/NgwdC7uJhnqu5ALqZFKmv+4Kqmhapuepye7MVMVqXag2w51E6XxLFBA==" />
+        <link type="text/css" rel="stylesheet" href="https://mihinn.github.io/blog/css/styles.2e4346099514bd4244fdde14f4af45732cadc83d9d95daf3be8ac63c6808b595aecba23a8c7f5dbc94195fb48fa4065cc81a718630e5a68b1f9433a3b56a7efd.css" integrity="sha512-LkNGCZUUvUJE/d4U9K9FcyytyD2dldrzvorGPGgItZWuy6I6jH9dvJQZX7SPpAZcyBpxhjDlposflDOjtWp+/Q==" />
         <style>
           .aboutfeeds {
             margin: 24px 0; padding: 12px;
@@ -59,7 +59,7 @@
           </div>
           <div class="head">
             <div class="avatar">
-              <img class="logo" src="/logo.svg" alt="Site Logo"/>
+              <img class="logo" src="/blog/images/logo.png" alt="Site Logo"/>
             </div>
             <div class="description">
               <p><xsl:value-of select="/rss/channel/description"/></p>

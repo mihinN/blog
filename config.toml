@@ -1,21 +1,20 @@
-
-baseURL = "https://example.com/"
-title = "My nice blog"
+baseURL = "https://mihinn.github.io/blog/"
+title = "Melk0reWasHere"
 languageCode = "en"
 defaultContentLanguage = "en"
 
 # this will be included in the footer after the current year the site is last
 # built, followed by the (c) symbol
 # you can use markdown inside this field
-copyright = "Some copyright notice - [my license](https://example.com/license)"
+copyright = "Mihin Nimnaka"
 
 paginate = 5  # number of articles per page in the index
 summaryLength = 70  # number of words for article summaries
 
 
 [params]
-    author = "Gabriele Musco"
-    description = "A description for my website"  # this will be added as metadata
+    author = "Mihin Nimnaka"
+    description = "Hi, I am Mihin, a 22 year old information security student from Sri Lanka. And studying at NSBM Green University. Currently I am working on my personal projects and I hope to bring those stuff in the near future."  # this will be added as metadata
 
     posts = "posts"  # content directory where to find home page posts; default searches in "posts" and "post"
     showPostsLink = true  # show or hide the link to the simple post list
@@ -29,20 +28,20 @@ summaryLength = 70  # number of words for article summaries
     homeSinglePage = "/home"
 
     # It's best to put these icons in the "static" folder of your site
-    logo = "/logo.svg"
-    favicon = "/favicon.png"  # 32x32
-    faviconIco = "/favicon.ico"  # 32x32
-    appletouch = "/apple-touch-icon.png"  # 180x180
-    svgicon = "/logo.svg"
-    icon512 = "/icon512.png"  # 512x512 png image
+    logo = "/blog/images/logo.png"
+    favicon = "/blog/images/favicon.ico"  # 32x32
+    faviconIco = "/blog/images/favicon.ico"  # 32x32
+    appletouch = "/blog/images/logo.png"  # 180x180
+    svgicon = "/blog/images/logo.png"
+    icon512 = "/blog/images/logo.png"  # 512x512 png image
 
     logoRightOfTitle = false  # positions the logo to the right of the title; default: false
 
     showTags = true  # show the Tags menu item; default true
     showRss = true  # show the link for the RSS feed; default true
 
-    imageInArticlePreview = false  # show images in article preview; default false
-    fitImageInArticlePreview = false  # make article preview images fit the article preview instead of getting cropped
+    imageInArticlePreview = true  # show images in article preview; default false
+    fitImageInArticlePreview = true  # make article preview images fit the article preview instead of getting cropped
     articleSummary = true  # show a summary in article preview; default true
     
     fontFamily = "JetBrains Mono"  # changes the font, default "JetBrains Mono"
@@ -64,32 +63,18 @@ summaryLength = 70  # number of words for article summaries
     navtype = "standard"  # changes the style of the pagination, available styles are: "standard", "circles"
     enableShadow = false  # shows a shadow around some elements
     menuStyle = "standard"  # changes the style of the main site navigation menu, available styles are: "standard", "buttons"
-    inputStyle = "standard" # changes the style of inputs (like the searchbar), available styles are: "standard", "buttons"
+    inputStyle = "buttons" # changes the style of inputs (like the searchbar), available styles are: "standard", "buttons"
 
     enableSearch = true  # enable search page
     searchbarEverywhere = true  # if the searchbar should be shown in every page; requires enableSearch
     searchMenuLink = false  # add a search link to the navigation menu; requires enableSearch
-    mobileHamburgerNav = false  # alternative hamburger menu layout for the main nav menu when screen is small
+    mobileHamburgerNav = true  # alternative hamburger menu layout for the main nav menu when screen is small
 
     enableFeatured = false  # enable a particular view for articles marked as featured (featured: true in the article frontmatter)
 
     underlineTitleLinks = false  # show an underline also for links that are titles
 
-    # enable comments support with commento using the script from your server
-    commento = "https://example.com/js/commento.js"
 
-    # enable comments support with cactus comments (cactus.chat)
-    cactusCommentsSiteName = "example.com"
-    cactusCommentsServerName = "cactus.chat"
-    cactusCommentsHomeserver = "https://matrix.cactus.chat:8448"
-
-    # enable analytics using Plausible
-    plausibleScriptUrl = "https://something.com/..."
-    plausibleDomain = "example.com"
-
-    # enable analytics using Umami
-    umamiScriptUrl = "https://something.com/..."
-    umamiWebsiteId = "example-tracking-code"
 
     enableShareOnFediverse = false  # enable a button at the end of an article to share it on the fediverse
     tocBeforeImage = false  # show the table of contents before the main article image; default false
@@ -112,11 +97,11 @@ summaryLength = 70  # number of words for article summaries
     # useful if deploying in gitlab pages with custom domain and don't want
     # the username.gitlab.io/website url to persist
     # this requires you to set baseURL (see above)
-    forceRedirect = false
+    forceRedirect = true
 
     infiniteScrolling = false  # activates infinite scrolling instead of regular pagination
-    enableFooterColumns = false  # activates footer columns, as described below
-    enableJumbotron = false  # enables jumbotron, as described below
+    enableFooterColumns = true  # activates footer columns, as described below
+    enableJumbotron = true  # enables jumbotron, as described below
     # related articles will be selected randomly based on tags and shown at
     # the bottom of the article, after the comments
     enableRelatedArticles = false
@@ -133,17 +118,19 @@ summaryLength = 70  # number of words for article summaries
         name = "About"
         url = "/about/"
         weight = 10
+
+         [[menu.main]]
+        identifier = "Posts"
+        name = "Posts"
+        url = "/posts"
+        weight = 10
+        
     # these links (menu.icons) will be added as icon links below the main nav
     [[menu.icons]]
-        identifier = "gitlab"
-        name = "GitLab"
+        identifier = "linkedin"
+        name = "Linkdin"
         url = "https://gitlab.com/gabmus"
         weight = 10
-    [[menu.icons]]
-        identifier = "gnome"
-        name = "GNOME GitLab"
-        url = "https://gitlab.gnome.org/gabmus"
-        weight = 20
 
 # this section is necessary if you want infinite scrolling
 # it allows to output the article list as paged JSON so that "pages" can be retrieved via javascript
