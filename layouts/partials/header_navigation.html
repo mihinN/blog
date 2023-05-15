@@ -3,9 +3,9 @@
         <input type="checkbox" id="main-nav-toggler" />
     {{ end }}
     <ul id="main-nav">
-        <li><a href="/">{{ i18n "home" }}</a></li>
+        <li><a href="/blog">{{ i18n "home" }}</a></li>
         {{ if (.Site.Params.showPostsLink | default true) }}
-            <li><a href="/posts">{{ i18n "posts" }}</a></li>
+            <li><a href="/blog/posts">{{ i18n "posts" }}</a></li>
         {{ end }}
         {{ range site.Params.extraContentDirs }}
             <li><a href="/{{ . }}">{{ . | humanize }}</a></li>
@@ -21,10 +21,10 @@
             <li><a href="{{ .URL | safeURL }}">{{ .Name }}</a></li>
         {{ end }}
         {{ if (.Site.Params.showTags | default true) }}
-            <li><a href="/tags">{{ i18n "tags" }}</a></li>
+            <li><a href="/blog/tags">{{ i18n "tags" }}</a></li>
         {{ end }}
         {{ if and (.Site.Params.searchMenuLink | default false) (.Site.Params.enableSearch | default true) }}
-            <li><a href="/search">{{ i18n "search" }}</a></li>
+            <li><a href="/blog/search">{{ i18n "search" }}</a></li>
         {{ end }}
     </ul>
 </nav>
