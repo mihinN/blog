@@ -116,20 +116,20 @@ summaryLength = 70  # number of words for article summaries
     [[menu.main]]
         identifier = "about"
         name = "About"
-        url = "/about/"
+        url = "/blog/about/"
         weight = 10
 
          [[menu.main]]
         identifier = "Posts"
         name = "Posts"
-        url = "/posts"
+        url = "/blog/posts"
         weight = 10
         
     # these links (menu.icons) will be added as icon links below the main nav
     [[menu.icons]]
-        identifier = "linkedin"
-        name = "Linkdin"
-        url = "https://gitlab.com/gabmus"
+        identifier = "github"
+        name = "Github"
+        url = "https://github.com/mihinN"
         weight = 10
 
 # this section is necessary if you want infinite scrolling
