@@ -1,9 +1,9 @@
-title: My awesome website
+title: Melk0reWasHere
 hugeTitle: false
 subtitle: Some fancy subtitle
 image: "https://dark.fi/insights/img/future-of-crypto-in-regulatory-hell/lunarshack1.jpg"
 imagePosition: left  # values: left, right, top, bottom
-background: "https://dark.fi/insights/img/future-of-crypto-in-regulatory-hell/lunarshack1.jpg"
+background: ""
 backgroundVideo: /jumbotron_video.mp4  # will replace the background image
 # it's best to provide both an mp4 and a web source for the video for better compatibility
 backgroundVideoMp4: /jumbotron_video.mp4
@@ -11,7 +11,7 @@ backgroundVideoWebm: /jumbotron_video.webm
 videoOpacity: 1.0
 textShadow: false
 fullscreen: false
-downArrow: true
+downArrow: false
 whiteText: false  # force white text in the jumbotron
 links:
   - title: About me
