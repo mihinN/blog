@@ -42,7 +42,7 @@
 
     
     
-    <link type="text/css" rel="stylesheet" href=https://mihinn.github.io/blog/css/styles.a2b7dd0fd2d01f86ec565b9ab6b08226e7ba6490495c0cc31db5eff6a5c882147a97d935cf3242119965c906978d296d0ffec6f729db7729997cb2f18894c471.css integrity="sha512-orfdD9LQH4bsVluatrCCJue6ZJBJXAzDHbXv9qXIghR6l9k1zzJCEZllyQaXjSltD/7G9ynbdymZfLLxiJTEcQ==" />
+    <link type="text/css" rel="stylesheet" href=https://mihinn.github.io/blog/css/styles.d7fc55bf59679a772390dc40be43165b69f5892ef11c5cb43073b653e729354183b1652344eb750700053da549d8531de4cd15a33cb9230896be3e25f4510fa6.css integrity="sha512-1/xVv1lnmncjkNxAvkMWW2n1iS7xHFy0MHO2U&#43;cpNUGDsWUjROt1BwAFPaVJ2FMd5M0Vozy5IwiWvj4l9FEPpg==" />
 <meta name="author" content="Mihin Nimnaka" />
 
     
@@ -145,19 +145,7 @@ int x=20 , y=30; ආකාරයට . struct තුලින් කරන්න�
 </div>
             </div>
         </div>
-        <div class="search">
-    <input id="searchbar" type="text" placeholder='Search' />
-    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
-</div>
-<script>
-    function newSearch() {
-        let term = searchbar.value.trim();
-        if (!term) return;
-        location.href = `/search?q=${term}`;
-    }
-    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
-</script>
-
+        
     </div>
     <div id="links">
         <a
@@ -316,10 +304,56 @@ struct එක declare කරන්නේ මෙහෙමයි ,</p>
         
             <a
                 
+                class="buttonTag"
+                
                 href="/tags/c-language-101">#C language 101</a>
         
     </p>
 
+
+    <a style="margin-bottom: 24px; display: inline-block;" class="shareBtn" onclick="openFediInstanceDialog();">
+        Share on the Fediverse
+    </a>
+    <div id="fediInstanceDialog">
+        <div class="bg" onclick="closeFediInstanceDialog();"></div>
+        <div class="dialog">
+            <h2>Enter your instance&#39;s address</h2>
+            <input id="fediInstanceInput" placeholder='Eg. mastodon.social' type="text" />
+            <div class="buttons">
+                <a class="shareBtn" onclick="closeFediInstanceDialog();">Cancel</a>
+                <a class="shareBtn" onclick="shareOnFedi();">Share</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var articleTitle = 'Structs in C language \/ සිංහල';
+        var articleLink = 'https:\/\/mihinn.github.io\/blog\/posts\/2022-11-12-structs-in-c-language-sinhala\/';
+        var fediInstanceDialog = document.getElementById('fediInstanceDialog');
+        var fediInstanceInput = document.getElementById('fediInstanceInput');
+        function openFediInstanceDialog() {
+            fediInstanceDialog.classList.add('open');
+        }
+        function closeFediInstanceDialog() {
+            fediInstanceDialog.classList.remove('open');
+        }
+        function fixURL(url) {
+            if (url.substr(0, 8) == 'https://') return url;
+            if (url.substr(0, 7) == 'http://') return url;
+            return 'https://' + url;
+        }
+        function shareOnFedi() {
+            let instance = fediInstanceInput.value.trim();
+            if (!instance) {
+                return;
+            }
+            instance = fixURL(instance);
+            window.open(
+                `${instance}/share?text=${articleTitle}%20${articleLink}`,
+                '__blank'
+            );
+            closeFediInstanceDialog();
+        }
+    </script>
 
 
 
@@ -341,6 +375,13 @@ struct එක declare කරන්නේ මෙහෙමයි ,</p>
                 <li><strong>About me</strong></li>
                 
                     <li><a target="_blank" href="https://mihinn.github.io/blog">My personal website</a></li>
+                
+            </ul>
+        
+            <ul class="notlist">
+                <li><strong>Discuss on here</strong></li>
+                
+                    <li><a target="_blank" href="https://github.com/mihinN/blog/discussions">Github</a></li>
                 
             </ul>
         

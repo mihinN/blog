@@ -41,7 +41,7 @@
 
     
     
-    <link type="text/css" rel="stylesheet" href=https://mihinn.github.io/blog/css/styles.a2b7dd0fd2d01f86ec565b9ab6b08226e7ba6490495c0cc31db5eff6a5c882147a97d935cf3242119965c906978d296d0ffec6f729db7729997cb2f18894c471.css integrity="sha512-orfdD9LQH4bsVluatrCCJue6ZJBJXAzDHbXv9qXIghR6l9k1zzJCEZllyQaXjSltD/7G9ynbdymZfLLxiJTEcQ==" />
+    <link type="text/css" rel="stylesheet" href=https://mihinn.github.io/blog/css/styles.d7fc55bf59679a772390dc40be43165b69f5892ef11c5cb43073b653e729354183b1652344eb750700053da549d8531de4cd15a33cb9230896be3e25f4510fa6.css integrity="sha512-1/xVv1lnmncjkNxAvkMWW2n1iS7xHFy0MHO2U&#43;cpNUGDsWUjROt1BwAFPaVJ2FMd5M0Vozy5IwiWvj4l9FEPpg==" />
 <meta name="author" content="Mihin Nimnaka" />
 
     
@@ -129,19 +129,7 @@
 </div>
             </div>
         </div>
-        <div class="search">
-    <input id="searchbar" type="text" placeholder='Search' />
-    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
-</div>
-<script>
-    function newSearch() {
-        let term = searchbar.value.trim();
-        if (!term) return;
-        location.href = `/search?q=${term}`;
-    }
-    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
-</script>
-
+        
     </div>
     <div id="links">
         <a
@@ -182,20 +170,6 @@
 
     
     
-        <div class="video_container">
-            <video
-                class="jumbotron_video"
-                id="jumbotron_video"
-                src="https://wixmp-ed30a86b8c4ca887773594c2.wixmp.com/v/mp4/74245d70-973b-4110-a4a9-636256722131/dfwvufe-f22a9580-a2ed-43d4-b1cb-b1f1cd6d03a5.1080p.9d98d5e48a314986bfdf04a8493dd97c.mp4"
-                playsinline
-                autoplay mute loop>
-                    
-                        <source src="https://wixmp-ed30a86b8c4ca887773594c2.wixmp.com/v/mp4/74245d70-973b-4110-a4a9-636256722131/dfwvufe-f22a9580-a2ed-43d4-b1cb-b1f1cd6d03a5.1080p.9d98d5e48a314986bfdf04a8493dd97c.mp4" type="video/mp4">
-                    
-                    
-            </video>
-        </div>
-    
     <div class="jumbotron">
         
             <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cfbe412a-b041-4e1f-a897-f10e5e882e49/dfx1yj5-c1dd3b4f-e0f0-492b-9810-61af4ffbebae.png/v1/fill/w_1280,h_1280,q_80,strp/vectors_by_shulgins_dfx1yj5-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2NmYmU0MTJhLWIwNDEtNGUxZi1hODk3LWYxMGU1ZTg4MmU0OVwvZGZ4MXlqNS1jMWRkM2I0Zi1lMGYwLTQ5MmItOTgxMC02MWFmNGZmYmViYWUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.J-J8YqOiMJ6K6ITEF1Nev2CaC7zdV62VlOA_FiFYZAY" />
@@ -204,28 +178,7 @@
             <h2 class="
                 
             ">Melk0reWasHere</h2>
-            <h3>Some fancy subtitle</h3>
-            
-                <ul id="play_button_container" style="display: none">
-                    <li>
-                        <a title="Play" style="border-radius: 100%; width: 32px; height: 32px; display: flex; justify-content: center; align-items: center;" class="shareBtn" onclick="playvideo();">  </a>
-                    </li>
-                </ul>
-                <script>
-                    var jumbotron_video = document.getElementById('jumbotron_video');
-                    var play_button_container = document.getElementById('play_button_container');
-                    window.onload = function() {
-                        setTimeout(function() {
-                            if (jumbotron_video.paused) {
-                                play_button_container.style.display = 'block';
-                            }
-                        }, 1000);
-                    };
-                    function playvideo() {
-                        jumbotron_video.play();
-                        play_button_container.style.display = 'none';
-                    }
-                </script>
+            <h3>Servant of Morgoth</h3>
             
             
                 <ul>
@@ -277,7 +230,7 @@
 
 
 
-<div class="postlist " id="postlist">
+<div class="postlist gridView" id="postlist">
 <article class="card postlistitem">
     <div>
         <h2>
@@ -438,6 +391,13 @@ int x=20 , y=30; ආකාරයට . struct තුලින් කරන්න�
                 <li><strong>About me</strong></li>
                 
                     <li><a target="_blank" href="https://mihinn.github.io/blog">My personal website</a></li>
+                
+            </ul>
+        
+            <ul class="notlist">
+                <li><strong>Discuss on here</strong></li>
+                
+                    <li><a target="_blank" href="https://github.com/mihinN/blog/discussions">Github</a></li>
                 
             </ul>
         
