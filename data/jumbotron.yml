@@ -14,7 +14,7 @@ fullscreen: false
 downArrow: false
 whiteText: true  # force white text in the jumbotron
 links:
-  - title: About me
-    link: /blog/about
+  - title: Whoami
+    link: /blog/whoami
   - title: Read my blog
     link: /blog/posts
