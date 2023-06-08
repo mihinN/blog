@@ -2,6 +2,12 @@
 title: Structs in C language / සිංහල
 date: 2022-11-12 
 category: notes
+image: https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f68cf413-ab00-41fc-82fe-0a175144bf20/dfoguih-b630d9e3-21fa-4901-879a-36ab310d0ac2.png/v1/fill/w_1095,h_730,q_70,strp/ninja_rabbit_02_by_darkwhite2981_dfoguih-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjY4Y2Y0MTMtYWIwMC00MWZjLTgyZmUtMGExNzUxNDRiZjIwXC9kZm9ndWloLWI2MzBkOWUzLTIxZmEtNDkwMS04NzlhLTM2YWIzMTBkMGFjMi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.u5-DDBhA9TYBaFQ5lM58TNm-3_3JgxaUjoWCbT4CBgU
+alt : Structs in C language / සිංහල
+imageCaption : Samurai rabbit 
+showShare : true
+comments: false
+toc: false
 tags:
     - C language 101 
 
@@ -12,10 +18,6 @@ keywords:
 ---
 
 ## Structs  ගැන , 
-
-
-![](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f68cf413-ab00-41fc-82fe-0a175144bf20/dfoguih-b630d9e3-21fa-4901-879a-36ab310d0ac2.png/v1/fill/w_1095,h_730,q_70,strp/ninja_rabbit_02_by_darkwhite2981_dfoguih-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjY4Y2Y0MTMtYWIwMC00MWZjLTgyZmUtMGExNzUxNDRiZjIwXC9kZm9ndWloLWI2MzBkOWUzLTIxZmEtNDkwMS04NzlhLTM2YWIzMTBkMGFjMi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.u5-DDBhA9TYBaFQ5lM58TNm-3_3JgxaUjoWCbT4CBgU "Structs , C language එකේ විශේෂ ස්ථානයක් ගන්නවා") <br>
-
 
 Structs , C language එකේ විශේෂ ස්ථානයක් ගන්නවා , එයට හේතුව  , අපි දන්නවා  අපිට programme එක තුල අවශ්‍ය දෙයක් computer memory එකේ තබා ගැනීමට අවශ්‍ය වූ විට සිදු කරන්නේ , variable එකක් create කරන එක. උදාහරණයක් විදියට ගත්තොත් .. 
 
