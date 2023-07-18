@@ -1,5 +1,5 @@
 ---
-title: Intrusion Detection & Preventing Systems.
+title: Intrusion Detection & Prevention Systems.
 date: 2023-04-17 
 category: notes
 tags:
@@ -13,4 +13,4 @@ keywords:
 
 ---
 
-Download My report [!!Link will available soon!!]()
+Download My report [!!Link will be available soon!!]()
