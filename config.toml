@@ -40,7 +40,7 @@ summaryLength = 70  # number of words for article summaries
     showTags = true  # show the Tags menu item; default true
     showRss = true  # show the link for the RSS feed; default true
 
-    imageInArticlePreview = true  # show images in article preview; default false
+    imageInArticlePreview = false  # show images in article preview; default false
     fitImageInArticlePreview = true  # make article preview images fit the article preview instead of getting cropped
     articleSummary = true  # show a summary in article preview; default true
     
@@ -58,7 +58,7 @@ summaryLength = 70  # number of words for article summaries
     paperCards = false  # enable paper card style; default false
     buttonTags = true  # enable button tag style; default false
     tagsInArticlePreview = true  # enable tags list in the article preview card
-    gridView = true  # show post list as a grid. goes well with paperCards
+    gridView = false  # show post list as a grid. goes well with paperCards
     bigArticleTitle = false  # makes the title in the single article view bigger
     navtype = "standard"  # changes the style of the pagination, available styles are: "standard", "circles"
     enableShadow = false  # shows a shadow around some elements
