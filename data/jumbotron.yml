@@ -1,13 +1,13 @@
 title: Melk0reWasHere
 hugeTitle: true
 # subtitle: Servant of Morgoth
-# image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cfbe412a-b041-4e1f-a897-f10e5e882e49/dfx1yj5-c1dd3b4f-e0f0-492b-9810-61af4ffbebae.png/v1/fill/w_1280,h_1280,q_80,strp/vectors_by_shulgins_dfx1yj5-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2NmYmU0MTJhLWIwNDEtNGUxZi1hODk3LWYxMGU1ZTg4MmU0OVwvZGZ4MXlqNS1jMWRkM2I0Zi1lMGYwLTQ5MmItOTgxMC02MWFmNGZmYmViYWUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.J-J8YqOiMJ6K6ITEF1Nev2CaC7zdV62VlOA_FiFYZAY"
+image: "https://aroundtrends.com/content/images/2020/11/A1GTDe7R2ML._AC_SL1500_-1.jpg"
 imagePosition: left  # values: left, right, top, bottom
-# background: ""
-# backgroundVideo: "https://wixmp-ed30a86b8c4ca887773594c2.wixmp.com/v/mp4/74245d70-973b-4110-a4a9-636256722131/dfwvufe-f22a9580-a2ed-43d4-b1cb-b1f1cd6d03a5.1080p.9d98d5e48a314986bfdf04a8493dd97c.mp4" # will replace the background image
+# background: "https://64.media.tumblr.com/a3e2dc161c552504ddb0c14165f4582a/tumblr_oytapjDXRa1vtn03do1_1280.png"
+# backgroundVideo: "https://www.youtube.com/watch?v=hIQcs0RZiNU" # will replace the background image
 # it's best to provide both an mp4 and a web source for the video for better compatibility
-# backgroundVideoMp4: "https://wixmp-ed30a86b8c4ca887773594c2.wixmp.com/v/mp4/74245d70-973b-4110-a4a9-636256722131/dfwvufe-f22a9580-a2ed-43d4-b1cb-b1f1cd6d03a5.1080p.9d98d5e48a314986bfdf04a8493dd97c.mp4"
-backgroundVideoWebm: ""
+# backgroundVideoMp4: "https://www.youtube.com/watch?v=hIQcs0RZiNU"
+# backgroundVideoWebm: "https://www.youtube.com/watch?v=hIQcs0RZiNU"
 videoOpacity: 5
 textShadow: false
 fullscreen: false
