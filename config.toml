@@ -14,7 +14,7 @@ summaryLength = 70  # number of words for article summaries
 
 [params]
     author = "Mihin Nimnaka"
-    description = "Hi, I am Mihin, a 22 year old information security student from Sri Lanka. And studying at NSBM Green University. Currently I am working on my personal projects and I hope to bring those stuff in the near future."  # this will be added as metadata
+    description = "Hi, I am Mihin, a 23 year old information security student from Sri Lanka. And studying at NSBM Green University. Currently I am working on my personal projects and I hope to bring those stuff in the near future."  # this will be added as metadata
 
     posts = "posts"  # content directory where to find home page posts; default searches in "posts" and "post"
     showPostsLink = true   # show or hide the link to the simple post list
