@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Mihin Nimnaka</copyright>
-    <lastBuildDate>Sat, 12 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://mihinn.github.io/blog/tags/c-language-101/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mihinn.github.io/blog/tags/c-language-101/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting started in C / සිංහල</title>
+      <link>https://mihinn.github.io/blog/posts/2023-09-11-c-language-sinhalen-first_lesson/</link>
+      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mihinn.github.io/blog/posts/2023-09-11-c-language-sinhalen-first_lesson/</guid>
+      <description>&amp;ldquo;පුරෝකථනයක්&amp;rdquo; &amp;ldquo;C&amp;rdquo; පාඩම් මාලාව පටන් ගන්න කලින් , මට නිකමට ලිපියක් ලියල දාන්න හිතුන , ඇයි ඇත්තටම මේ (C) පරිගණක බාශාවම ලිපි ටිකක් විදියට දාන්න හිතුන එක ගැන . මේකෙදි අපිට C වල අතීත කතාව නොකිය ඉන්නම බැහැ , මොකද සරලවම C language එක බාවිතයට් ගෙන තමයි අද අපි බාවිතා කරන Operating Systems , ඒ වගේම device drivers , network හා සම්බන්ද applications , Embedded Systems සහ Databases වැනි බොහොමයක් ලියල තියෙන්නේ .</description>
+    </item>
+    
     <item>
       <title>Structs in C language / සිංහල</title>
       <link>https://mihinn.github.io/blog/posts/2022-11-12-structs-in-c-language-sinhala/</link>

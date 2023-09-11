@@ -16,8 +16,12 @@
         
         
     
-    "articles": [{"date":"0001-01-01","image":"","imageAlt":"","link":"https://mihinn.github.io/blog/manifest/index.json","summary":"","tags":[],"title":"Manifest"},{"date":"0001-01-01","image":"","imageAlt":"","link":"https://mihinn.github.io/blog/search/","summary":"","tags":[],"title":"Search"}],
-    "test": "Intrusion Detection & Prevention Systems.   Structs in C language / සිංහල   WHOAMI?   History of Hosts.txt File   Google CrowdSource / සිංහල   Manifest   Search   ",
+        
+        
+        
+    
+    "articles": [{"date":"2020-08-20","image":"","imageAlt":"","link":"https://mihinn.github.io/blog/posts/2020-08-20-google-crowdsource/","summary":"\u0026quot; Google ඉගෙන ගන්නෙත් අපෙන් .. ! \u0026quot; Crowdsource සංකල්පයත් සමග ලෝකයේ වඩාත් ප්‍රචලිත Crowd-sourcing platform එකක් වන Google Crowdsource ගැන සරල සටහනක් මේ .. .ආරම්බයක් වශයෙන් ගත්කල ,2016 වසරේ අගෝස්තු මස Web \u0026amp; Mobile Application එකක් වශයෙන් දියත් කල මෙම Google Crowd source Application එක හරහා Googleලගේ විවිද සේවාවන්ට අදාළ A.I Algorithms train කිරීම සිදුවෙනවා . ඉදිරියෙ පැවැත්වීමට නියමිත Google CrowdSorce event එකේදී මේ සම්බන්ද තවත් වැදගත් දේවල් දැන ගැනීමේ හැකියාව පවතින අතර මේ සම්බන්ද කුතුහලයක් තියෙන ඔබට ,Google play Store හරහා Download කර ගැනීමේ හැකියාව පවතිනවා .","tags":["Google CrowdSource"],"title":"Google CrowdSource / සිංහල"},{"date":"0001-01-01","image":"","imageAlt":"","link":"https://mihinn.github.io/blog/manifest/index.json","summary":"","tags":[],"title":"Manifest"},{"date":"0001-01-01","image":"","imageAlt":"","link":"https://mihinn.github.io/blog/search/","summary":"","tags":[],"title":"Search"}],
+    "test": "Getting started in C / සිංහල   Intrusion Detection & Prevention Systems.   Structs in C language / සිංහල   WHOAMI?   History of Hosts.txt File   Google CrowdSource / සිංහල   Manifest   Search   ",
     "page": "2",
     "next": ""
 }
