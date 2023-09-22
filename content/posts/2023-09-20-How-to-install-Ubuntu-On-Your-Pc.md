@@ -1,18 +1,21 @@
 ---
-title: Intrusion Detection & Prevention Systems.
+title: Installing Ubuntu on VM
 date: 2023-04-17 
 category: notes
 tags:
-    - Networking 101
+    - Linux/Unix
+    - Ubuntu
     - Infosec
-image : https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c5457e12-0c52-42c3-9fee-23a0d97c115f/dfpa5se-883e5c7a-2fac-4a85-afc4-eb29ad86cbc5.jpg/v1/fit/w_800,h_450,q_70,strp/cyber_drones_scifi_photo_manipulation_speed_art_by_learningscreen_dfpa5se-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDUwIiwicGF0aCI6IlwvZlwvYzU0NTdlMTItMGM1Mi00MmMzLTlmZWUtMjNhMGQ5N2MxMTVmXC9kZnBhNXNlLTg4M2U1YzdhLTJmYWMtNGE4NS1hZmM0LWViMjlhZDg2Y2JjNS5qcGciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.neNlVmnJ5-AszyjDMaotim6ecvGvQzEv47HDBP_fbMk
+image : https://c.wallhere.com/photos/95/07/Ubuntu_AI_art_mountains_forest_red_orange-2224160.jpg!d
 
 alt : robottxt:) 
 keywords:
-    - ids
-    - ips 
-    - Computer Science
-    - computer security 
+    - Ubuntu
+    - Linux 
+    - Unix
+    - VM
+    - Virtual Box
+    - Oracle 
 
 ---
 

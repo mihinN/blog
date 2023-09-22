@@ -4,6 +4,8 @@ date: 2022-01-02
 category: notes
 tags:
     - Networking 101
+image : https://www.backblaze.com/blog/wp-content/uploads/2017/04/m1.jpg
+alt : greatWall 
 keywords:
     - Networking History
     - Computer Science 
