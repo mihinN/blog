@@ -1,5 +1,5 @@
 ---
-title: Intrusion Detection & Prevention Systems.
+title: IDS and IPS.
 date: 2023-04-17 
 category: notes
 tags:

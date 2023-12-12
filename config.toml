@@ -1,5 +1,5 @@
 baseURL = "https://mihinn.github.io/blog/"
-title = "Melk0reWasHere"
+title = "Melk0revsHere"
 languageCode = "en"
 defaultContentLanguage = "en"
 
@@ -117,7 +117,26 @@ summaryLength = 70  # number of words for article summaries
         identifier = "whoami"
         name = "whoami"
         url = "/whoami"
+        weight = 2
+
+    [[menu.main]]
+        identifier = "c_tuts"
+        name = "C lessons"
+        url = "/c_tuts"
         weight = 10
+    
+    [[menu.main]]
+        identifier = "networking_tuts"
+        name = "networking Lessons"
+        url = "/networking_tuts"
+        weight = 10
+
+     [[menu.main]]
+        identifier = "other"
+        name = "other"
+        url = "/other"
+        weight = 10
+
         
     # these links (menu.icons) will be added as icon links below the main nav
     [[menu.icons]]
