@@ -18,18 +18,36 @@
     </item>
     
     <item>
-      <title>Infosec</title>
-      <link>https://mihinn.github.io/blog/tags/infosec/</link>
+      <title>C</title>
+      <link>https://mihinn.github.io/blog/tags/c/</link>
       <pubDate>Mon, 17 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://mihinn.github.io/blog/tags/infosec/</guid>
+      <guid>https://mihinn.github.io/blog/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>computer science</title>
+      <link>https://mihinn.github.io/blog/tags/computer-science/</link>
+      <pubDate>Mon, 17 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mihinn.github.io/blog/tags/computer-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://mihinn.github.io/blog/tags/programming/</link>
+      <pubDate>Mon, 17 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mihinn.github.io/blog/tags/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Networking 101</title>
       <link>https://mihinn.github.io/blog/tags/networking-101/</link>
-      <pubDate>Mon, 17 Apr 2023 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 02 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://mihinn.github.io/blog/tags/networking-101/</guid>
       <description></description>
