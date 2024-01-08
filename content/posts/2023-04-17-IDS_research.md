@@ -66,7 +66,6 @@ gcc -o first first.c
 ```
 ./first
 ```
-![](https://raw.githubusercontent.com/mihinN/blog/main/content/images/banner_one.jpeg)
 
 එතකොට Display වෙනවා  අපට අපි printf (); එක මැදට දුන්න "හෙල්ලෝ owrld " කියන ටික
 
