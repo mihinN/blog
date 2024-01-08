@@ -66,6 +66,7 @@ gcc -o first first.c
 ```
 ./first
 ```
+<img title="a title" alt="Alt text" src="../images/I_heart_validator.png">
 
 
 එතකොට Display වෙනවා  අපට අපි printf (); එක මැදට දුන්න "හෙල්ලෝ owrld " කියන ටික
