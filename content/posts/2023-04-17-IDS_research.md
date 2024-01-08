@@ -42,16 +42,7 @@ return 0;
  gcc --version
  
 ```
-
-
-```
-
-gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
-Copyright (C) 2021 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-```
+![](https://raw.githubusercontent.com/mihinN/blog/main/images/gcc-version-001.png)
 
 ඊළඟට මෙන්න මේ ආකාරයට type කරලා  , ඔයාගේ programme එකට අදාළ binnary file එක ලබා  ගන්න පුළුවන් . මෙතන -o තැනට කැමති නමක් දෙන්න පුළුවන් , source file එකේ නමම යොදන්න පුළුවන් නම් වැඩේ පිළිවෙලයි .
 
@@ -61,8 +52,8 @@ gcc -o first first.c
 
 ```
 
+දැන් output එක විදියට first කියල binnary file එකක් create වෙලා ඇති  . මේක open කරලා  බැලුවට මේකේ symbols වගයක් පෙන්න පුළුවන් . ඊළඟට මේක run  කරලා  බලමු මේ අක්කරට
 
-දැන් output එක විදියට first කියල binnary file එකක් create වෙලා ඇති  . මේක open කරලා  බැලුවට මේකේ symbols වගයක් පෙන්න පුළුවන් . ඊළඟට මේක run  කරලා  බලමු මේ අක්කරට  
 ```
 ./first
 ```
