@@ -59,7 +59,7 @@
           </div>
           <div class="head">
             <div class="avatar">
-              <img class="logo" src="../fav.png" alt="Site Logo"/>
+              <img class="logo" src="https://raw.githubusercontent.com/mihinN/blog/main/fav.png" alt="Site Logo"/>
             </div>
             <div class="description">
               <p><xsl:value-of select="/rss/channel/description"/></p>
