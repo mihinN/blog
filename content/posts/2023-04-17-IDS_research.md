@@ -6,7 +6,7 @@ tags:
     - C
     - Programming
     - computer science
-image : https://static.wikia.nocookie.net/a53aa201-a8bd-4ada-91e8-a395cc695acd/scale-to-width/755
+image : https://64.media.tumblr.com/cc27d2cec4ed157b8a3626784b97d338/8668624395854b63-ef/s1280x1920/eedb3e0789075af0e94d92c6a47ce6ba0e9cb8a6.jpg
 
 alt : robottxt:) 
 keywords:
