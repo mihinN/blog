@@ -101,7 +101,7 @@ summaryLength = 70  # number of words for article summaries
 
     infiniteScrolling = false  # activates infinite scrolling instead of regular pagination
     enableFooterColumns = true  # activates footer columns, as described below
-    enableJumbotron = false  # enables jumbotron, as described below
+    enableJumbotron = true  # enables jumbotron, as described below
     # related articles will be selected randomly based on tags and shown at
     # the bottom of the article, after the comments
     enableRelatedArticles = false
