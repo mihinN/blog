@@ -1054,9 +1054,9 @@ header.jumbotronContainer {
 .jumbotron {
     width: 100%;
     {{ if $jumbo_fullscreen }}
-        height: 80vh;
+        height: 40vh;
     {{ else }}
-        min-height: 40vh;
+        min-height: 20vh;
     {{ end }}
     flex-wrap: no-wrap;
     text-align: center;
