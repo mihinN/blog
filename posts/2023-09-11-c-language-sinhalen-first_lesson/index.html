@@ -42,7 +42,7 @@
 
     
     
-    <link type="text/css" rel="stylesheet" href=https://mihinn.github.io/blog/css/styles.4e6a18dbd78c8ca9fab46330d89bcc940e56fc10598bc42f4aab8336261936515b09eb6da5e5ed17d82e033c946c97ad43322415e2290ef070a247483f3c7e85.css integrity="sha512-TmoY29eMjKn6tGMw2JvMlA5W/BBZi8QvSquDNiYZNlFbCettpeXtF9guAzyUbJetQzIkFeIpDvBwokdIPzx&#43;hQ==" />
+    <link type="text/css" rel="stylesheet" href=https://mihinn.github.io/blog/css/styles.67c2b241d719565ebf8019dcf14bfbc172f7a8c30a0578fff22efa8db3f685df220f7dd36adf7e7d104b8b88abd1ddd7b282b2cf1ca464b56fb361eb71aaaeb5.css integrity="sha512-Z8KyQdcZVl6/gBnc8Uv7wXL3qMMKBXj/8i76jbP2hd8iD33Tat9&#43;fRBLi4ir0d3XsoKyzxykZLVvs2HrcaqutQ==" />
 <meta name="author" content="Mihin Nimnaka" />
 
     
@@ -244,50 +244,6 @@
         
     </p>
 
-
-    <a style="margin-bottom: 24px; display: inline-block;" class="shareBtn" onclick="openFediInstanceDialog();">
-        Share on the Fediverse
-    </a>
-    <div id="fediInstanceDialog">
-        <div class="bg" onclick="closeFediInstanceDialog();"></div>
-        <div class="dialog">
-            <h2>Enter your instance&#39;s address</h2>
-            <input id="fediInstanceInput" placeholder='Eg. mastodon.social' type="text" />
-            <div class="buttons">
-                <a class="shareBtn" onclick="closeFediInstanceDialog();">Cancel</a>
-                <a class="shareBtn" onclick="shareOnFedi();">Share</a>
-            </div>
-        </div>
-    </div>
-    <script>
-        var articleTitle = 'Getting started in C \/ සිංහල';
-        var articleLink = 'https:\/\/mihinn.github.io\/blog\/posts\/2023-09-11-c-language-sinhalen-first_lesson\/';
-        var fediInstanceDialog = document.getElementById('fediInstanceDialog');
-        var fediInstanceInput = document.getElementById('fediInstanceInput');
-        function openFediInstanceDialog() {
-            fediInstanceDialog.classList.add('open');
-        }
-        function closeFediInstanceDialog() {
-            fediInstanceDialog.classList.remove('open');
-        }
-        function fixURL(url) {
-            if (url.substr(0, 8) == 'https://') return url;
-            if (url.substr(0, 7) == 'http://') return url;
-            return 'https://' + url;
-        }
-        function shareOnFedi() {
-            let instance = fediInstanceInput.value.trim();
-            if (!instance) {
-                return;
-            }
-            instance = fixURL(instance);
-            window.open(
-                `${instance}/share?text=${articleTitle}%20${articleLink}`,
-                '__blank'
-            );
-            closeFediInstanceDialog();
-        }
-    </script>
 
 
 
