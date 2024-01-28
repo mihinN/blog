@@ -1,8 +1,9 @@
 ---
 title: Hello World! in C Language / සිංහල
+description: අද තමයි මේකේ දෙවැනි කොටස , ඔක්තෝබර් පළවෙනිදා  පට්ට වැස්සක් අතරේ ලියන්නේ 🌧️🌧️ , කලින් ලිපියෙන් පොඩි හැදින්වීමක් සිදු කලේ , මොකද කාට හරි හිතෙන්න පුළුවන් මේ කාලෙට C වගේ පරිගණක බාශාවක් ඉගෙන ගන්න එකේ ප්‍රයෝජනයක් තියේද , ඒ කාලය වෙන වැඩකට allocate කලොත් නරකද වගේ දේවල් හිතෙන්න පුළුවන් , ඉතින් ඒ වගේ ගතියක් තිබ්බ නම් මීට පෙර ලිපිය කියෙව්වම මම හිතනවා අඩු වෙන්න ඇති කියල 😉 .. හරි දැන් අපි වැඩේට බහිමු , මම හිතනවා  මේක කියවන ඔබ මොනවා හරි  Linux based Os එකට හෝ  WSL වලට වගේ   මාරු වෙලා ඇති කියල , වැඩි කතා  අනවශ්‍යයි අපි c වලින් සරල programm එකක් ලියල බලමු ,
 date: 2023-10-10
 category: notes
-image: https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/15102441-2d8e-4af8-a431-0d409e866e20/d9osclx-5ffc445c-5296-4370-92ce-dd6781e70c79.jpg/v1/fill/w_1024,h_655,q_75,strp/hidden_sanctuary_by_cristi_b_d9osclx-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjU1IiwicGF0aCI6IlwvZlwvMTUxMDI0NDEtMmQ4ZS00YWY4LWE0MzEtMGQ0MDllODY2ZTIwXC9kOW9zY2x4LTVmZmM0NDVjLTUyOTYtNDM3MC05MmNlLWRkNjc4MWU3MGM3OS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.CdLNeFqqSQ5QPtzlf0KaJ29qReB0PzdcDa4YByV21G8
+# image: https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/15102441-2d8e-4af8-a431-0d409e866e20/d9osclx-5ffc445c-5296-4370-92ce-dd6781e70c79.jpg/v1/fill/w_1024,h_655,q_75,strp/hidden_sanctuary_by_cristi_b_d9osclx-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjU1IiwicGF0aCI6IlwvZlwvMTUxMDI0NDEtMmQ4ZS00YWY4LWE0MzEtMGQ0MDllODY2ZTIwXC9kOW9zY2x4LTVmZmM0NDVjLTUyOTYtNDM3MC05MmNlLWRkNjc4MWU3MGM3OS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.CdLNeFqqSQ5QPtzlf0KaJ29qReB0PzdcDa4YByV21G8
 alt : Hello World! in C Language / සිංහල
 imageCaption : Younglings 
 showShare : true
@@ -37,8 +38,8 @@ return 0;
 
 (මෙතැනදී IDE  එකක් බාවිතා කරන්න පුළුවන් , හැබැයි code suggestions , build tools නැතුව අමුවෙන්ම code කරන එක , ඉගෙන ගන්න time එකේ හොදයි කියල හිතනවා .)  ඊළඟට ලියා ගත්ත code එක .c  කියන extension එකෙන් save කර ගන්න මොකද මේ අපි දැන් create කර ගන්නේ C File  එකක් නිසා .
 
-හරි , අපි සාර්ථක ලෙස code එක ලියා ගත්තට පස්සේ , ඊළඟට අපි  ලියපු programme එක Compile  කර ගන්න ඕන , ඉතින් මේ compile කරනවා කියන්නේ මොකක්ද ??
-compile කරන්නේ මොකෙන්ද ?? compile කරද්දී මොකක්ද වෙන්නේ ?? මේ වගේ දේවල් ඔලුවට එන්න පුළුවන් , ඉතින් අපි ඒ දේවල් එකින් එක බලමු .
+හරි , අපි සාර්ථක ලෙස code එක ලියා ගත්තට පස්සේ , ඊළඟට අපි  ලියපු programme එක Compile  කර ගන්න ඕන , ඉතින් මේ ``compile කරනවා කියන්නේ මොකක්ද ??
+compile කරන්නේ මොකෙන්ද ?? compile කරද්දී මොකක්ද වෙන්නේ ??`` මේ වගේ දේවල් ඔලුවට එන්න පුළුවන් , ඉතින් අපි ඒ දේවල් එකින් එක බලමු .
 
 අපි programme එකක් ලියද්දි අපේ පහසුවට ඉංග්‍රීසි බාෂාව තමයි බාවිතා කරන්නේ , ඉංග්‍රීසි බාෂවත් එක්ක විවිද ගණිතමය සංකේත සහ logical symbols නුත් බාවිතය ගන්නවා සාර්ථක programme එකක් ලියා අවසන් කර ගන්න .
 
@@ -60,8 +61,12 @@ gcc --version
 ```
 මේක ගහල enter කලාට පස්සේ මෙහෙම display  වෙනවා නම් , ඔයාගේ machine එකේ මේ වෙනකොට compiler එක තියෙනවා .
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiV5qz6ndCe-ooKnvPW-O-SgVZDiyEYwYqGr4dgVirFyhBdE007GRl21SeOHQ74ji17UWJ1AQsAI7-kGGgneweiljaF2dKczm3IJ_RQ-DRnp7mHHIpWSgNTJ9IyqJBRn030TN_Q-kLkOa3VT0yLf50TYs-bBbmrJqT_k1G9MOPjHl7J_16-eYqpRso043ZS/s16000-rw/Screenshot%202024-01-18%20154216.png)
-
+```shell
+gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+```
  ### එහෙම නැත්නම්, 
 
 ```shell
@@ -92,7 +97,6 @@ gcc -o first first.c
 
 මේකේ මුලින්ම තියෙන්නේ  ``` # ``` symbol එක , ඉතින් c language එකේ මේ symbol එක යොදා ගන්නේ programme එකට යම් කිසි pre-processing part එකක් එකතු කරන්න .  දැනට pre-processing කියන්නේ , ඔයාලට මතක ඇති compilation process එක steps කීපෙකට වෙනවා කියල , අන්න ඒ එක අවස්තාවක තමයි pre-processing කියන සිද්දිය වෙන්නේ . 
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgaeLRzuvEgWT73TbK5onSjeD0TZpEoi2z3iyR2_iT7TqTW943L-XrOOeHX_X68y4vabJGm-hONBhqfyMqqUeExyDDltu2xP_BwEQV83LlXWXZ-PoSirbKIVciRrG_LCqM01ClQgtrfLO-42hQ7UCtBKH8rWkXhI7v5DfAH_sjkrEUDZqy5Z4BIIiACO-QQ/s1187/prepo.png)
 
 ඊළඟට අපි include යොදා ගත්ත , මොකද අපිට stdio කියන header file එක add කර ගන්න ඕන නිසා .
 
@@ -119,6 +123,7 @@ int main()
     *(str + 1) = 'n';
     return 0;
 }
+
 ```
 
 
