@@ -3,7 +3,6 @@ title: Hello World! in C Language / සිංහල
 description: අද තමයි මේකේ දෙවැනි කොටස , ඔක්තෝබර් පළවෙනිදා  පට්ට වැස්සක් අතරේ ලියන්නේ 🌧️🌧️ , කලින් ලිපියෙන් පොඩි හැදින්වීමක් සිදු කලේ , මොකද කාට හරි හිතෙන්න පුළුවන් මේ කාලෙට C වගේ පරිගණක බාශාවක් ඉගෙන ගන්න එකේ ප්‍රයෝජනයක් තියේද , ඒ කාලය වෙන වැඩකට allocate කලොත් නරකද වගේ දේවල් හිතෙන්න පුළුවන් , ඉතින් ඒ වගේ ගතියක් තිබ්බ නම් මීට පෙර ලිපිය කියෙව්වම මම හිතනවා අඩු වෙන්න ඇති කියල 😉 .. හරි දැන් අපි වැඩේට බහිමු , මම හිතනවා  මේක කියවන ඔබ මොනවා හරි  Linux based Os එකට හෝ  WSL වලට වගේ   මාරු වෙලා ඇති කියල , වැඩි කතා  අනවශ්‍යයි අපි c වලින් සරල programm එකක් ලියල බලමු ,
 date: 2023-10-10
 category: notes
-# image: https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/15102441-2d8e-4af8-a431-0d409e866e20/d9osclx-5ffc445c-5296-4370-92ce-dd6781e70c79.jpg/v1/fill/w_1024,h_655,q_75,strp/hidden_sanctuary_by_cristi_b_d9osclx-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjU1IiwicGF0aCI6IlwvZlwvMTUxMDI0NDEtMmQ4ZS00YWY4LWE0MzEtMGQ0MDllODY2ZTIwXC9kOW9zY2x4LTVmZmM0NDVjLTUyOTYtNDM3MC05MmNlLWRkNjc4MWU3MGM3OS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.CdLNeFqqSQ5QPtzlf0KaJ29qReB0PzdcDa4YByV21G8
 alt : Hello World! in C Language / සිංහල
 imageCaption : Younglings 
 showShare : true
@@ -89,8 +88,6 @@ gcc -o first first.c
 ```shell
 ./first
 ```
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixLSsSoDhuNqleMKmgyP7KNsjhyphenhyphenQPqQA4lgOo4l8aAv2zoVC_9EQ7evk84wc_Ds2GsTz6xVzPWgJvbvhsq4_lCGGs-tnwPLgOu_d0q1BuH1A1SqDNtQs4jdoQZ_NRCgSS4ut-yNs0uj996H3fKawm3SCmJJ2TdvLwFGrTyvnRByIMbnst8mRqWYuIxVvfk/s320-rw/Screenshot%202024-01-18%20145640.png)
-
 දැන් අපි සාර්ථක ලෙස , අපේ පලවෙනි programme එක ලියල run කරලා  අවසානයි. අපි දැන් බලමු එකින් එකට code එකේ තියෙන syntax සහ ඒවගෙ තේරුම.
 
 ඔයාල ට මුලින්ම බලා ගන්න පුළුවන් ```#include<stdio.h>``` කියන syntax එක ,
