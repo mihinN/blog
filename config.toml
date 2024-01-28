@@ -50,8 +50,8 @@ summaryLength = 70  # number of words for article summaries
 
     # multipliers applied to font sizes, useful for custom fonts that may be too big or too small
     titleFontSizeMultiplier = 1.0
-    mainFontSizeMultiplier = 1.2
-    monoFontSizeMultiplier = 1.2
+    mainFontSizeMultiplier = 0.9
+    monoFontSizeMultiplier = 1.1
 
     contentWidth = "1000px"  # maximum width of the site content, css syntax
 
@@ -76,8 +76,8 @@ summaryLength = 70  # number of words for article summaries
 
 
 
-    enableShareOnFediverse = true  # enable a button at the end of an article to share it on the fediverse
-    tocBeforeImage = false  # show the table of contents before the main article image; default false
+    enableShareOnFediverse = false  # enable a button at the end of an article to share it on the fediverse
+    tocBeforeImage = true  # show the table of contents before the main article image; default false
 
     # WARNING: deprecated! Use [[menu.icons]] instead, look below
     # links = [
