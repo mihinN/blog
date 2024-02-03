@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <meta charset="UTF-8"/>
         
-        <link type="text/css" rel="stylesheet" href="https://mihinn.github.io/blog/css/styles.03d34c46b48bb9b226111a387e87c0c13338e7c1ff93569badef5016e3c6c14988c6bec4f242bc947fdc42540f3d40cafdbfa3e1288764bcec3e3a6dd477317f.css" integrity="sha512-A9NMRrSLubImERo4fofAwTM458H/k1abre9QFuPGwUmIxr7E8kK8lH/cQlQPPUDK/b+j4SiHZLzsPjpt1Hcxfw==" />
+        <link type="text/css" rel="stylesheet" href="https://mihinn.github.io/blog/css/styles.5e44c5efcf5d7318d2f868da3367701bb45be2725c12dcfc6c44dd5454137dfdee8e3d30a9d436eab7c9703634d47841343a3444e200c300c697231418e68e07.css" integrity="sha512-XkTF789dcxjS+GjaM2dwG7Rb4nJcEtz8bETdVFQTff3ujj0wqdQ26rfJcDY01HhBNDo0ROIAwwDGlyMUGOaOBw==" />
         <style>
           .aboutfeeds {
             margin: 24px 0; padding: 12px;
