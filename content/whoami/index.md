@@ -3,26 +3,32 @@ title: WHOAMI?
 date: 2023-02-24 17:51:42
 ---
 
-A passionate security researcher
+### ~A passionate security researcher
 
-A Developer
+#### A Developer
 
-and a Writer.
+##### and a Writer.
 
+ I'm Mihin, a 23-year-old Computer Science undergraduate from Sri Lanka. 
+ I am passionate about security research, proficient in development,
+ and also enjoy expressing my thoughts through writing. Currently, I am working on my personal projects, which you can explore below.
 
-Hi, I am Mihin, 23 years old CS undergraduate from Sri lanka. currently working on my personal projects.
-
-thse are the projects and i listed down here.
-
-- [x] Simple IDS 
-        	This Intrusion detection system project for my university final year.
+### - [x] Simple IDS 
+```shell
+        	This is an Intrusion Detection System project for my university final year.
+```
 
 - [x] Scraper for my own use
-- [x] Simple game engine
-        	me and my friends are hoping to build a game. actulay this will mostly done with unrealEngine
-                but for now , i have plenty of time to sharp my knowledge and im trying to build this for fun.
-                and actually , i can sharp my c++
 
+- [x] Simple game engine
+```shell
+        My friends and I are excited about embarking on a game development project. 
+        Specifically, we plan to use Unreal Engine for the majority of the development process. 
+        However, at the moment, I have ample time to enhance my knowledge,
+         and I am working on this project for the sheer joy of it. 
+         This opportunity allows me to refine my skills in C++. 
+         I am looking forward to the learning journey and the eventual creation of our game.
+```
 
 
 
