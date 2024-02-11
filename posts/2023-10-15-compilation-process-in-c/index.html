@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html class="" lang="en"><head>
+    
+        <script>
+            if (location.host != new URL("https:\/\/mihinn.github.io\/blog\/").host) location.href = "https:\/\/mihinn.github.io\/blog\/"
+        </script>
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    <link
+    rel="icon"
+    href='https://raw.githubusercontent.com/mihinN/blog/main/fav.png'
+/>
+<link
+    rel="shortcut icon"
+    href='https://raw.githubusercontent.com/mihinN/blog/main/fav.png'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='fav.png'
+/>
+
+    <link
+        rel="icon"
+        href='fav.ico'
+        type="image/svg+xml"
+    />
+
+<title>
+        
+            Compilation Process / සිංහල  &ndash;
+        
+        Melk0revsHere
+    </title>
+
+    
+    <link href="/blog/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" integrity="sha512-lydow8GLOLlYNOtHlksNCmGWWCBsbIEtikXpHzfWqx78HLlyQZHOzyLwPpKol4Th6aCwLUXOfODVYgwrd3nwKQ=="/>
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
+
+    
+    
+    <link type="text/css" rel="stylesheet" href=https://mihinn.github.io/blog/css/styles.5e44c5efcf5d7318d2f868da3367701bb45be2725c12dcfc6c44dd5454137dfdee8e3d30a9d436eab7c9703634d47841343a3444e200c300c697231418e68e07.css integrity="sha512-XkTF789dcxjS&#43;GjaM2dwG7Rb4nJcEtz8bETdVFQTff3ujj0wqdQ26rfJcDY01HhBNDo0ROIAwwDGlyMUGOaOBw==" />
+<meta name="author" content="Mihin Nimnaka" />
+
+    
+        <meta name="keywords" content='C language 101' />
+    
+    
+        <meta name="description" content="ilation Process එක, කලින් ලිපියේ සදහන් කළා ඔයාලට මතක ඇති , අපි ලියපු programme එක compile කර ගැනීමේදී , ඒ compilation process එක steps කීපෙකට වෙන බව , ඉතින් අද අපි ඒ steps කීපය ගැන බලන්න තමයි යන්නේ . ඊට කලින් කවුරු හරි මේ ලිපියෙන් කියවන්න පටන් ගත්ත නම් ඒ අය සදහා මම පොඩි ආරම්බයක් විදියට අයෙත් මේ පොඩි විස්තරෙකින්ම පටන් ගන්නම් .
+සරලවම , අපි compiler එකක් බාවිතයට ගන්නේ අපි ලියන programme එක machine එක බවට convert කර ගැනීමට , මොකද පරිගණකයට තේරෙන්නේ 0,1 එහෙමත් නැත්නම් binary නිසා , ඉතින් මේ සදහා විවිද පරිගණක බාෂා ඒ ඒ බාශාවට ගැලපෙන්න compilers නිර්මාණය කරලා තියෙනවා ." />
+    
+
+<meta property="og:site_name"
+    content='Melk0revsHere' />
+
+    <meta property="og:title" content="Compilation Process / සිංහල" />
+    <meta property="og:type" content="article" />
+    
+    <meta
+        property="article:author" content="Mihin Nimnaka" />
+    <meta
+        property="article:published_time"
+        content='2023-10-15T00:00:00Z&#43;0000' />
+    
+        
+            <meta property="article:tag" content="C language 101" />
+        
+    
+    <meta property="og:url" content="https://mihinn.github.io/blog/posts/2023-10-15-compilation-process-in-c/" />
+    
+    
+        
+            
+        
+    
+    <meta property="og:image"
+        content="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f239c046-c6e3-4e6d-a9d7-3c189be515d1/dgv260v-cf3ad109-df5f-4263-9245-81aa8bb5cf78.jpg/v1/fill/w_1014,h_788,q_70,strp/italian_connection_iii_by_luopioart_dgv260v-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTk1IiwicGF0aCI6IlwvZlwvZjIzOWMwNDYtYzZlMy00ZTZkLWE5ZDctM2MxODliZTUxNWQxXC9kZ3YyNjB2LWNmM2FkMTA5LWRmNWYtNDI2My05MjQ1LTgxYWE4YmI1Y2Y3OC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.gdGPY2zHhz15o7mlqI4vVyyGtWhvNDNGE4D0bDOAzsk" />
+    
+        <meta property="og:description" content="&amp;ldquo;C&amp;rdquo; compilation Process එක, කලින් ලිපියේ සදහන් කළා ඔයාලට මතක ඇති , අපි ලියපු programme එක compile කර ගැනීමේදී , ඒ compilation process එක steps කීපෙක" />
+    
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='mihinn.github.io/blog'
+/>
+<meta property="twitter:url" content="https://mihinn.github.io/blog/posts/2023-10-15-compilation-process-in-c/" />
+
+
+    <meta name="twitter:title" content="Compilation Process / සිංහල" />
+    
+    
+    
+        
+            
+        
+    
+    <meta name="twitter:image"
+        content="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f239c046-c6e3-4e6d-a9d7-3c189be515d1/dgv260v-cf3ad109-df5f-4263-9245-81aa8bb5cf78.jpg/v1/fill/w_1014,h_788,q_70,strp/italian_connection_iii_by_luopioart_dgv260v-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTk1IiwicGF0aCI6IlwvZlwvZjIzOWMwNDYtYzZlMy00ZTZkLWE5ZDctM2MxODliZTUxNWQxXC9kZ3YyNjB2LWNmM2FkMTA5LWRmNWYtNDI2My05MjQ1LTgxYWE4YmI1Y2Y3OC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.gdGPY2zHhz15o7mlqI4vVyyGtWhvNDNGE4D0bDOAzsk" />
+    
+        <meta name="twitter:description" content="&amp;ldquo;C&amp;rdquo; compilation Process එක, කලින් ලිපියේ සදහන් කළා ඔයාලට මතක ඇති , අපි ලියපු programme එක compile කර ගැනීමේදී , ඒ compilation process එක steps කීපෙක" />
+    
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+
+<body>
+        <div id="baseContainer"><header class="">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/blog">Melk0revsHere</a>
+                        
+                            
+                        
+                    </h1>
+                    
+                        <label id="hamburger-menu" for="main-nav-toggler">
+                            &#xf85b;
+                        </label>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+        <input type="checkbox" id="main-nav-toggler" />
+    
+    <ul id="main-nav">
+        <li><a href="/blog">Home</a></li>
+        
+            <li><a href="/blog/posts">Posts</a></li>
+        
+        
+        
+        
+        
+        
+            <li><a href="/blog/whoami">whoami</a></li>
+        
+            <li><a href="/blog/c_tuts">C lessons</a></li>
+        
+            <li><a href="/blog/networking_tuts">networking Lessons</a></li>
+        
+            <li><a href="/blog/other">other</a></li>
+        
+        
+            <li><a href="/blog/tags">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/mihinN">
+    
+    
+        &#xf09b;
+    
+    <span>
+        Github
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+<article class="card single">
+    
+        <h1>Compilation Process / සිංහල</h1>
+    
+    
+        <p class="date">
+            <span title='Date'> </span>
+    2023-10-15
+
+</p>
+    
+    
+    
+        <figure style="margin: 0">
+            
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f239c046-c6e3-4e6d-a9d7-3c189be515d1/dgv260v-cf3ad109-df5f-4263-9245-81aa8bb5cf78.jpg/v1/fill/w_1014,h_788,q_70,strp/italian_connection_iii_by_luopioart_dgv260v-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTk1IiwicGF0aCI6IlwvZlwvZjIzOWMwNDYtYzZlMy00ZTZkLWE5ZDctM2MxODliZTUxNWQxXC9kZ3YyNjB2LWNmM2FkMTA5LWRmNWYtNDI2My05MjQ1LTgxYWE4YmI1Y2Y3OC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.gdGPY2zHhz15o7mlqI4vVyyGtWhvNDNGE4D0bDOAzsk" alt="Compilation Process / සිංහල" />
+            
+            
+        </figure>
+    
+    
+    <div><h2 id="c-compilation-process-එක">&ldquo;C&rdquo; compilation Process එක,</h2>
+<p>කලින් ලිපියේ සදහන් කළා ඔයාලට මතක ඇති , අපි ලියපු programme එක compile කර ගැනීමේදී , ඒ compilation process එක steps කීපෙකට වෙන බව , ඉතින් අද අපි ඒ steps කීපය ගැන බලන්න තමයි යන්නේ . ඊට කලින් කවුරු හරි මේ ලිපියෙන් කියවන්න පටන් ගත්ත නම් ඒ අය සදහා මම පොඩි ආරම්බයක් විදියට අයෙත් මේ පොඩි විස්තරෙකින්ම පටන් ගන්නම් .</p>
+<p>සරලවම , අපි compiler එකක් බාවිතයට ගන්නේ අපි ලියන programme  එක machine එක බවට convert කර ගැනීමට , මොකද පරිගණකයට තේරෙන්නේ 0,1 එහෙමත් නැත්නම් binary නිසා , ඉතින් මේ සදහා විවිද පරිගණක බාෂා ඒ ඒ බාශාවට ගැලපෙන්න compilers නිර්මාණය කරලා තියෙනවා .</p>
+<p>ඉතින් අපේ කතාව සිද්ද වෙන්නේ C බාශාවත් එක්ක නිසා gcc එහෙමත් GNU C Compiler එක තමයි බාවිතයට ගන්නේ . ඉතින්  gcc compiler එක C පරිගණක බාශාවේ වගේම C++ සදහාත් බාවිතා වෙනවා . ඊට අපතරව Go වගේ language වලත් ඒ සදහා වන compiler නිර්මාණයේදී යොදා ගෙන තිබෙනවා .</p>
+<p>හරි මම හිතවා ආරම්බය විදියට මේ විස්තර ටික ඇති කියල , දැන් බලමු මොනවද මේ steps ටික කියල ,
+C වල compilation process  එක steps 4කට වෙනවා , ඒ කියන්නේ ඔයා programme එක ලියල , gcc -o first first.c enter ගැහුවා
+ගමන් gcc programme එක ඔයාගේ programme එක steps හතරක් හරහා ගිහිල්ල තමයි ඔයා දකින ./first කියන executable file එක create කරන්නේ .</p>
+<p>ඉතින් මොකක්ද මේ හතර ?
+පිලිවෙලින් ,</p>
+<ol>
+<li>Pre-processing</li>
+<li>Compiling</li>
+<li>Assembling</li>
+<li>Linking</li>
+</ol>
+<p>පලවෙනි එක තමයි <code>pre-processing part</code> එක , මෙතැනදී වෙන්නේ compiler එකෙන් ඔයාගේ programme එකේ තියෙන <strong>header fles , macros ටික extract කර ගන්නවා</strong> .  ඉතින් මේක ඔයාටම බලා ගන්න පුළුවන් , ඔයාට තියෙන්නේ compiler එකට කියන්න compilation process එක pre-processing part එකෙන් පමණක් නවත්වන්න කියල , මේක කරන්නේ කොහොමද , හරි සරලයි ,
+gcc  -o විදියට සදහන් කල flag (අපි මේවට flags කියල කියනවා) එක වෙනුවට <code>gcc -E</code> <strong>flag</strong> එක යොදා ගෙන compile කරලා බලමු .  ඔයාලට output එක බලාගන්න පුළුවන් මේ විදියට ,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>gcc -E first.c
+</span></span></code></pre></div><p>මේක පැහැදිලි වෙන්න මේ ටික text file එකක save කර ගමු මේ විදියට .</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>gcc -E first.c &gt; first-pre.txt
+</span></span></code></pre></div><p>දැන් ඔයාල සාර්ථක ලෙස එකක් ඉවරයි , ඊළඟට <code>compilation part</code> එක , මෙතනදී වෙන්නේ <strong>ඔයා extract කර ගත්තු code</strong> එක <code>assembly language එකට convert වෙන එක</code> , assembly කියන්නේ <strong>low -level language</strong> එකක් <strong>machine code එකට සමීප</strong> , ඒ කලේ programmes බොහොමයක් ලියවුනේ මේ බාශාවෙන්(මේ බාෂාව ටිකක් අමාරු වුන නිසා තමයි dennis richie C නිර්මාණය කලේ). ඉතින් මේ වැඩේ අපිට කරන්න පුළුවන් කලින් වගේ gcc වලට <code>-S</code> කියන flag එක ලබා දීමෙන් , ඒවගේම .s කියන file type එකෙන් output එක ගන්න පුළුවන් .</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>gcc -S first.s first.c
+</span></span></code></pre></div><p>දැන් ඔයාලට බලා ගන්න පුළුවන් assembly code එක.
+ඊළඟ step එක තමයි මේ assembly code  එක binaries වලට convert කර ගන්න එක ,  මේකට අපි -c flag එක යොදා ගන්නවා.
+<strong>ENTER</strong> කල ගමන් අපිට first .o object file එක create වෙලා තියෙනවා ..</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>gcc -c first.s
+</span></span></code></pre></div><p>මෙතනදී compiler එකෙන් warnings එහෙම දෙන්න පුළුවන් linking part එක වෙලා නැහැ කියල , අපි ඉතින් දන්නවා නේ තව step එකක් තියෙනවා කියල අන්තිම stage එකට එන්න.</p>
+<p>ඉතාමත් සාර්ථක අකාරයෙන් මේ ටික අවසන් කල ඔයා , ඊළඟට යන්නේ මේක compile කරලා අවසාන කර ගන්න. ඉතින් එකට අපි -o flag එක යොදා ගෙන
+මේ ආකාරයට compile කරලා අවසාන කරනවා ,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>gcc -o first first.o
+</span></span></code></pre></div><p>ඉතින් මෙතනදී වෙන්නේ Linking part එක කලින් කිව්වා වගේ , ඔයාගේ programme එකට අවශ්‍ය library  එකක් තියෙනවා ඒ binaries සහ ඔයාගේ programme එකේ binaries link එහෙමත් නැත්නම් connect කරන්නේ මෙතනදී .</p>
+<p>හරි , මේක තමයි compilation process එකේ කතාව , මොනම හරි ගැටළුවක් තියෙනවා නම් පහල තියෙන chat box එකේ දාල තියන්න , ජයවේවා!!</p>
+</div>
+</article>
+
+    
+    <p class="articleTagsContainer">
+        <span> </span>
+        <strong>Tags:</strong>
+        
+            <a
+                
+                class="buttonTag"
+                
+                href="/tags/c-language-101">#C language 101</a>
+        
+    </p>
+
+
+
+
+
+
+                    </main><footer>
+    
+    <hr />
+<h4>ඔබේ අදහස් හා යෝජනා මෙහි දමන්න (කැමති නමක් ගහල register වෙලා , හිතෙන දේ කියන්න) ** Feel free to share your thoughts, questions, or anything on your mind. This is your space, and we're all ears!  **</h4><br>
+<img src = "https://web.archive.org/web/20040331145805if_/http://www.geocities.com:80/landxgrave/tomjerry-ani.gif"><br>
+<iframe src="https://www5.cbox.ws/box/?boxid=948200&boxtag=EjabTx" width="30%" height="300" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
+    <div class="footerColumns">
+        
+            <ul class="notlist">
+                <li><strong>My other projects</strong></li>
+                
+                    <li><a target="_blank" href="https://github.com/mihinN/net-moniter-1.0v-scratch">Network Monitering Tool</a></li>
+                
+            </ul>
+        
+            <ul class="notlist">
+                <li><strong>About me</strong></li>
+                
+                    <li><a target="_blank" href="https://mihinn.github.io/blog">My personal website</a></li>
+                
+            </ul>
+        
+            <ul class="notlist">
+                <li><strong>Discuss</strong></li>
+                
+                    <li><a target="_blank" href="https://github.com/mihinN/blog/discussions">Github</a></li>
+                
+            </ul>
+        
+            <ul class="notlist">
+                <li><strong>Neocities</strong></li>
+                
+                    <li><a target="_blank" href="https://melk0re.neocities.org/">melk0re.neocities.org</a></li>
+                
+            </ul>
+        
+            <ul class="notlist">
+                <li><strong>Coredump</strong></li>
+                
+                    <li><a target="_blank" href="https://melk0revshere.blogspot.com/">melk0revshere.blogspot.com</a></li>
+                
+            </ul>
+        
+    </div>
+
+<p><small>
+        
+        2024 &copy; Mihin Nimnaka
+    </small></p>
+
+    <img src="http://www.anybrowser.org/campaign/bvgraphics/earth.gif">
+    <img src = "https://anlucas.neocities.org/bookmark_this_page.gif">
+    <img src = "https://anlucas.neocities.org/neocities_button.gif">
+    <img src="https://www.freebsd.org/gifs/power-button.gif">  
+    <img src="https://www.w3.org/QA/Tools/I_heart_validator">
+    
+    
+      
+</footer>
+</div>
+            </div>
+        </div>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
+    
+    </style>
+    
+</body>
+</html>
