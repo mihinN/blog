@@ -11,6 +11,7 @@ comments: false
 toc: false
 tags:
     - C language 101 
+    - 01 lesson
 
 keywords:
     - c programming in සිංහල   

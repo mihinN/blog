@@ -1,8 +1,5 @@
 <article class="card postlistitem">
     <div>
-        <h2>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-        </h2>
         <p class="date">
             <span title='{{ i18n "date" }}'> </span>
             {{- partial "date.html" .Date -}}
@@ -14,6 +11,10 @@
                 {{ end }}
             {{ end }}
         </p>
+        <h2>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h2>
+        
         {{ if .Site.Params.imageInArticlePreview }}
             {{ if .Params.Image }}
                 <a class="unstyledLink" href="{{ .Permalink }}">

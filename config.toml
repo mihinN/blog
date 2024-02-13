@@ -37,19 +37,19 @@ summaryLength = 70  # number of words for article summaries
 
     logoRightOfTitle = true  # positions the logo to the right of the title; default: false
 
-    showTags = true  # show the Tags menu item; default true
+    showTags = false  # show the Tags menu item; default true
     showRss = true  # show the link for the RSS feed; default true
 
-    imageInArticlePreview = true  # show images in article preview; default false
-    fitImageInArticlePreview = true  # make article preview images fit the article preview instead of getting cropped
-    articleSummary = true  # show a summary in article preview; default true
+    imageInArticlePreview = false  # show images in article preview; default false
+    fitImageInArticlePreview = false  # make article preview images fit the article preview instead of getting cropped
+    articleSummary = false  # show a summary in article preview; default true
     
     fontFamily = "JetBrains Mono"  # changes the font, default "JetBrains Mono"
     titleFontFamily = "JetBrains Mono"  # font used for titles and headings
     monospaceFontFamily = "JetBrains Mono"  # changes the monospace font for code, default "JetBrains Mono"
 
     # multipliers applied to font sizes, useful for custom fonts that may be too big or too small
-    titleFontSizeMultiplier = 1.0
+    titleFontSizeMultiplier = 0.8
     mainFontSizeMultiplier = 0.9
     monoFontSizeMultiplier = 1.1
 
@@ -66,13 +66,13 @@ summaryLength = 70  # number of words for article summaries
     inputStyle = "buttons" # changes the style of inputs (like the searchbar), available styles are: "standard", "buttons"
 
     enableSearch = false  # enable search page
-    searchbarEverywhere = true  # if the searchbar should be shown in every page; requires enableSearch
+    searchbarEverywhere = false  # if the searchbar should be shown in every page; requires enableSearch
     searchMenuLink = false  # add a search link to the navigation menu; requires enableSearch
     mobileHamburgerNav = true  # alternative hamburger menu layout for the main nav menu when screen is small
 
     enableFeatured = false  # enable a particular view for articles marked as featured (featured: true in the article frontmatter)
 
-    underlineTitleLinks = false  # show an underline also for links that are titles
+    underlineTitleLinks = true  # show an underline also for links that are titles
 
 
 
