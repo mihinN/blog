@@ -76,7 +76,4 @@ gcc -o first first.o
 ඉතින් මෙතනදී වෙන්නේ Linking part එක කලින් කිව්වා වගේ , ඔයාගේ programme එකට අවශ්‍ය library  එකක් තියෙනවා නම්, ඒ binaries සහ ඔයාගේ programme එකේ binaries link එහෙමත් නැත්නම් connect කරන්නේ මෙතනදී .
 
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhP0st-zc8xKKWj-2iud8negyA3LSYPPoEHfKYGTXjInO0jgb6GdhtDyryH12k-7wPzHKBLv5yYMCvyzEiHQSvhZL45mtX39r_L28Xh8SxpBi_XMlaZNbrBm69Vf-pkQHc8Avx5WUyvYdVSuq5ap15V4jVUIitFtesyGsSbtO7VIUmQkNbCvqeQHubDZn08/w640-h388-rw/c-gcc-compilation-process.gif)
-
-
 හරි , මේක තමයි compilation process එකේ කතාව , මොනම හරි ගැටළුවක් තියෙනවා නම් පහල තියෙන chat box එකේ දාල තියන්න , ජයවේවා!! 🤍
