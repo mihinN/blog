@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html class="" lang="en"><head>
+<html class="" lang="en"><head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
     
         <script>
-            if (location.host != new URL("https:\/\/mihinn.github.io\/blog\/").host) location.href = "https:\/\/mihinn.github.io\/blog\/"
+            if (location.host != new URL("http:\/\/localhost:1313\/blog\/").host) location.href = "http:\/\/localhost:1313\/blog\/"
         </script>
     
     <meta name="viewport" content="width=device-width" />
@@ -11,11 +11,11 @@
 
     <link
     rel="icon"
-    href='fav.ico'
+    href='https://raw.githubusercontent.com/mihinN/blog/main/fav.png'
 />
 <link
     rel="shortcut icon"
-    href='fav.ico'
+    href='https://raw.githubusercontent.com/mihinN/blog/main/fav.png'
     type="image/x-icon"
 />
 <link
@@ -33,7 +33,7 @@
         
             Structs in C language / සිංහල  &ndash;
         
-        Melk0reWasHere
+        Melk0revsHere
     </title>
 
     
@@ -42,11 +42,11 @@
 
     
     
-    <link type="text/css" rel="stylesheet" href=https://mihinn.github.io/blog/css/styles.d7fc55bf59679a772390dc40be43165b69f5892ef11c5cb43073b653e729354183b1652344eb750700053da549d8531de4cd15a33cb9230896be3e25f4510fa6.css integrity="sha512-1/xVv1lnmncjkNxAvkMWW2n1iS7xHFy0MHO2U&#43;cpNUGDsWUjROt1BwAFPaVJ2FMd5M0Vozy5IwiWvj4l9FEPpg==" />
+    <link type="text/css" rel="stylesheet" href=http://localhost:1313/blog/css/styles.354e81bcb9cdf09daa8dcabd47848e4d8808eee8cf1ba167c06dce3fed8da9b9a5efdad45a25868a72682d3ea6b073d473ab86096247cb2b80c687f74c96adf5.css integrity="sha512-NU6BvLnN8J2qjcq9R4SOTYgI7ujPG6FnwG3OP&#43;2Nqbml79rUWiWGinJoLT6msHPUc6uGCWJHyyuAxof3TJat9Q==" />
 <meta name="author" content="Mihin Nimnaka" />
 
     
-        <meta name="keywords" content='C language 101' />
+        <meta name="keywords" content='03 lesson, C language 101' />
     
     
         <meta name="description" content="s , C language එකේ විශේෂ ස්ථානයක් ගන්නවා , එයට හේතුව , අපි දන්නවා අපිට programme එක තුල අවශ්‍ය දෙයක් computer memory එකේ තබා ගැනීමට අවශ්‍ය වූ විට සිදු කරන්නේ , variable එකක් create කරන එක. උදාහරණයක් විදියට ගත්තොත් ..
@@ -54,7 +54,7 @@ int x=20 , y=30; ආකාරයට . struct තුලින් කරන්න�
     
 
 <meta property="og:site_name"
-    content='Melk0reWasHere' />
+    content='Melk0revsHere' />
 
     <meta property="og:title" content="Structs in C language / සිංහල" />
     <meta property="og:type" content="article" />
@@ -66,10 +66,12 @@ int x=20 , y=30; ආකාරයට . struct තුලින් කරන්න�
         content='2022-11-12T00:00:00Z&#43;0000' />
     
         
+            <meta property="article:tag" content="03 lesson" />
+        
             <meta property="article:tag" content="C language 101" />
         
     
-    <meta property="og:url" content="https://mihinn.github.io/blog/posts/2022-11-12-structs-in-c-language-sinhala/" />
+    <meta property="og:url" content="http://localhost:1313/blog/posts/2022-11-12-structs-in-c-language-sinhala/" />
     
     
         
@@ -84,9 +86,9 @@ int x=20 , y=30; ආකාරයට . struct තුලින් කරන්න�
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:domain"
-      content='mihinn.github.io/blog'
+      content='localhost:1313/blog'
 />
-<meta property="twitter:url" content="https://mihinn.github.io/blog/posts/2022-11-12-structs-in-c-language-sinhala/" />
+<meta property="twitter:url" content="http://localhost:1313/blog/posts/2022-11-12-structs-in-c-language-sinhala/" />
 
 
     <meta name="twitter:title" content="Structs in C language / සිංහල" />
@@ -112,14 +114,12 @@ int x=20 , y=30; ආකාරයට . struct තුලින් කරන්න�
 <div class="titleAndSearchContainer">
         <div id="titleContainer">
             
-                <a class="unstyledLink" href="/">
-                    
-                </a>
-            
             <div class="rightOfLogo">
                 <div class="titleAndHamburger">
                     <h1>
-                        <a class="unstyledLink" href="/blog">Melk0reWasHere</a>
+                        <a class="unstyledLink" href="/blog">Melk0revsHere</a>
+                        
+                            
                         
                     </h1>
                     
@@ -144,8 +144,12 @@ int x=20 , y=30; ආකාරයට . struct තුලින් කරන්න�
         
             <li><a href="/blog/whoami">whoami</a></li>
         
+            <li><a href="/blog/c_tuts">C lessons</a></li>
         
-            <li><a href="/blog/tags">Tags</a></li>
+            <li><a href="/blog/networking_tuts">networking Lessons</a></li>
+        
+            <li><a href="/blog/other">other</a></li>
+        
         
         
     </ul>
@@ -227,98 +231,103 @@ int x=20 , y=30; ආකාරයට . struct තුලින් කරන්න�
 struct තුලින් කරන්නෙත් මේ හා සමාන ක්‍රියාවලියක් (ඒ කියන්නේ memory එකට acces කිරීමක්) . හැබැයි මෙහි වෙනස් කමක් දක්නට පුළුවන්, ඒ .. අපි variable එකක් create කරනකොට බාවිතා කරනවා data types කියලා ජාතියක් . int ,char ,short ,float ,long , double කියලා Data-types set එකක් අපි දැනටමත් දන්නවා , මේවට අපි කියනව pre-define data-types කියල, මොකද මේවා නිකන් standards වගේ එදා ඉදලා තිබ්බ දේවල් .</p>
 <p>හැබැයි structs නිර්මාණය කරලා තියෙන්නේ , මේ Pre-define data types සමග බැදුණු varible කිහිපයක් එක් කරගෙන අපිට නව data type එකක් නිර්ම්මාණය කර ගතහැකි අකාරයටයි. අර සෙට් එක bundle කරලා එකක් නිර්මාණය කර ගැනීමක් තමයි සිද්ද වෙන්නේ ,  අන්න ඒ හේතුව නිසා අපි structs කියන්නේ User-define data type එකක් විදියට සලකනවා .</p>
 <p>අපි උදාහරණයක් අරන් බලමු ,</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
-<span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>name; <span style="color:#75715e">// pointer variable එකක් use කල එකට confused වෙන්න එපා , ඒ කොටසෙන් කියනවා 
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>district;
-<span style="color:#66d9ef">int</span> student_count;
-}
-</code></pre></div><p>👆 ඉහත දක්වල තියෙන විදියට තමයි අපි normally code කරන්නේ  👆</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>name; <span style="color:#75715e">// pointer variable එකක් use කල එකට confused වෙන්න එපා , ඒ කොටසෙන් කියනවා 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>district;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> student_count;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>👆 ඉහත දක්වල තියෙන විදියට තමයි අපි normally code කරන්නේ  👆</p>
 <p>හරි දැන් බලමු , අපි structs බාවිත කරමින් මේ සිදු කරන්නේ කොහොමද කියල ..</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span>
-<span style="color:#66d9ef">struct</span> schools{
- <span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> name;
- <span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> district;
- <span style="color:#66d9ef">int</span> student_count;	
-};
-
-<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
-	
-}
-</code></pre></div><p>මේක අපි ලියද්දි Global scope එකෙන් ලියන්නේ ( main එක උඩින්  ලියන්නේ) , එම නිසා globaly available වෙනවා නිකන්ම.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> schools{
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> name;
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> district;
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">int</span> student_count;	
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>මේක අපි ලියද්දි Global scope එකෙන් ලියන්නේ ( main එක උඩින්  ලියන්නේ) , එම නිසා globaly available වෙනවා නිකන්ම.
 ඒවගේම තමයි මම කලින් කිව්වා වගේ ඔක්කොම bundle කරලා එකකට ගෙනාවට පස්සේ අලුතින් මේ නිර්මාණය වුනේ data type එකක් ( එය User-define data type එකක් කියලත් හදුන්වනවා ), ඉහත උදාහරණයට අනුව , මේකේ Data-type  එක වෙන්නේ struct school කියන එක
 <strong><code>🤠  // Data-type එක මොකක්ද කියලා ඇහුවොත් නිකන් school නෙවේ , struct school . 🤠</code></strong></p>
 <p>හරි දැන් Data-type එක නිර්මාණය කර ගෙන අවසානයි.
 දැන් තියෙන්නේ අපිට මේකෙන් ප්‍රයෝජනයක් ගන්න , අපිට මෙය main එකට call කර ගන්න වෙනවා , එහෙමත් නැත්නම් අපි මේ අවස්තාවට කියනවා struct එකක් declare කරනව කියලා , නැතිනම් initialize කරනවා යනුවෙනුත් හදුන්වන්න පුළුවන්.
 struct එක declare කරන්නේ මෙහෙමයි ,</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">struct</span> schools{
-   <span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> name;
-   <span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> district;
-   <span style="color:#66d9ef">int</span> student_count;
-};
-<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
-	<span style="color:#66d9ef">struct</span> schools f_school;
-<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
-}
-</code></pre></div><p>මේ ආකාරයට declare කර ගත්ත variable එක තවම initialize කළා කියන තැනට ඇවිල්ල නැහැ , එකට හේතුව අපි කිසිම Data එකක් දීල නැති එක ,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">struct</span> schools{
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> name;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> district;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">int</span> student_count;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">struct</span> schools f_school;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>මේ ආකාරයට declare කර ගත්ත variable එක තවම initialize කළා කියන තැනට ඇවිල්ල නැහැ , එකට හේතුව අපි කිසිම Data එකක් දීල නැති එක ,
 මෙන්න මේ ආකාරයට data අපි create කල variable එකට දෙමු &hellip; <strong><code>( variable එක : f_school , data type එක : struct schools  )</code></strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">struct</span> schools{
-   <span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> name;
-   <span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> district;
-   <span style="color:#66d9ef">int</span> student_count;
-};
-
-<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
-	<span style="color:#66d9ef">struct</span> schools f_school;
-	f_school.name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;St.thomas College&#34;</span>;
-	f_school.district <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Matara&#34;</span>;
-	f_school.student_count <span style="color:#f92672">=</span> <span style="color:#ae81ff">6500</span>;
-
-    printf(<span style="color:#e6db74">&#34;%s </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,f_school.name);
-    printf(<span style="color:#e6db74">&#34;%s </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,f_school.district);
-    printf(<span style="color:#e6db74">&#34;%d </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,f_school.student_count);
-
-    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
-}
-</code></pre></div><p><strong>output එක :</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">struct</span> schools{
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> name;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> district;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">int</span> student_count;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">struct</span> schools f_school;
+</span></span><span style="display:flex;"><span>	f_school.name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;St.thomas College&#34;</span>;
+</span></span><span style="display:flex;"><span>	f_school.district <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Matara&#34;</span>;
+</span></span><span style="display:flex;"><span>	f_school.student_count <span style="color:#f92672">=</span> <span style="color:#ae81ff">6500</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%s </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,f_school.name);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%s </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,f_school.district);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%d </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,f_school.student_count);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>output එක :</strong></p>
 <ul>
 <li>St.thomas College</li>
 <li>Matara</li>
 <li>6500</li>
 </ul>
 <p>ඒ වගේම අපිට පුළුවන් ඉහත අකාරයට initialize කර ගතපු data , පහත ඇති ආකාරයටත් වෙනස් කර ගැනීමට හැක</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">struct</span> schools{
-   <span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> name;
-   <span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> district;
-   <span style="color:#66d9ef">int</span> student_count;
-};
-
-<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
-	<span style="color:#66d9ef">struct</span> schools f_school <span style="color:#f92672">=</span> {
-        .name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;St.thomas College&#34;</span>,
-        .district <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Matara&#34;</span>,
-        .student_count <span style="color:#f92672">=</span> <span style="color:#ae81ff">6500</span>
-    };
-
-    printf(<span style="color:#e6db74">&#34;%s </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,f_school.name);
-    printf(<span style="color:#e6db74">&#34;%s </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,f_school.district);
-    printf(<span style="color:#e6db74">&#34;%d </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,f_school.student_count);
-
-    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
-}
-
-</code></pre></div><p>අදට එපමණයි , ජයවේවා !🤍</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">struct</span> schools{
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> name;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> district;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">int</span> student_count;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">struct</span> schools f_school <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        .name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;St.thomas College&#34;</span>,
+</span></span><span style="display:flex;"><span>        .district <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Matara&#34;</span>,
+</span></span><span style="display:flex;"><span>        .student_count <span style="color:#f92672">=</span> <span style="color:#ae81ff">6500</span>
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%s </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,f_school.name);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%s </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,f_school.district);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%d </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,f_school.student_count);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>අදට එපමණයි , ජයවේවා !🤍</p>
 </div>
 </article>
 
-    <hr />
+    
     <p class="articleTagsContainer">
         <span> </span>
         <strong>Tags:</strong>
+        
+            <a
+                
+                class="buttonTag"
+                
+                href="/tags/03-lesson">#03 lesson</a>
         
             <a
                 
@@ -329,50 +338,6 @@ struct එක declare කරන්නේ මෙහෙමයි ,</p>
     </p>
 
 
-    <a style="margin-bottom: 24px; display: inline-block;" class="shareBtn" onclick="openFediInstanceDialog();">
-        Share on the Fediverse
-    </a>
-    <div id="fediInstanceDialog">
-        <div class="bg" onclick="closeFediInstanceDialog();"></div>
-        <div class="dialog">
-            <h2>Enter your instance&#39;s address</h2>
-            <input id="fediInstanceInput" placeholder='Eg. mastodon.social' type="text" />
-            <div class="buttons">
-                <a class="shareBtn" onclick="closeFediInstanceDialog();">Cancel</a>
-                <a class="shareBtn" onclick="shareOnFedi();">Share</a>
-            </div>
-        </div>
-    </div>
-    <script>
-        var articleTitle = 'Structs in C language \/ සිංහල';
-        var articleLink = 'https:\/\/mihinn.github.io\/blog\/posts\/2022-11-12-structs-in-c-language-sinhala\/';
-        var fediInstanceDialog = document.getElementById('fediInstanceDialog');
-        var fediInstanceInput = document.getElementById('fediInstanceInput');
-        function openFediInstanceDialog() {
-            fediInstanceDialog.classList.add('open');
-        }
-        function closeFediInstanceDialog() {
-            fediInstanceDialog.classList.remove('open');
-        }
-        function fixURL(url) {
-            if (url.substr(0, 8) == 'https://') return url;
-            if (url.substr(0, 7) == 'http://') return url;
-            return 'https://' + url;
-        }
-        function shareOnFedi() {
-            let instance = fediInstanceInput.value.trim();
-            if (!instance) {
-                return;
-            }
-            instance = fixURL(instance);
-            window.open(
-                `${instance}/share?text=${articleTitle}%20${articleLink}`,
-                '__blank'
-            );
-            closeFediInstanceDialog();
-        }
-    </script>
-
 
 
 
@@ -380,7 +345,9 @@ struct එක declare කරන්නේ මෙහෙමයි ,</p>
                     </main><footer>
     
     <hr />
-
+<h4>ඔබේ අදහස් හා යෝජනා මෙහි දමන්න (කැමති නමක් ගහල register වෙලා , හිතෙන දේ කියන්න) ** Feel free to share your thoughts, questions, or anything on your mind. This is your space, and we're all ears!  **</h4><br>
+<img src = "https://web.archive.org/web/20040331145805if_/http://www.geocities.com:80/landxgrave/tomjerry-ani.gif"><br>
+<iframe src="https://www5.cbox.ws/box/?boxid=948200&boxtag=EjabTx" width="30%" height="300" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
     <div class="footerColumns">
         
             <ul class="notlist">
@@ -404,14 +371,35 @@ struct එක declare කරන්නේ මෙහෙමයි ,</p>
                 
             </ul>
         
+            <ul class="notlist">
+                <li><strong>Neocities</strong></li>
+                
+                    <li><a target="_blank" href="https://melk0re.neocities.org/">melk0re.neocities.org</a></li>
+                
+            </ul>
+        
+            <ul class="notlist">
+                <li><strong>Coredump</strong></li>
+                
+                    <li><a target="_blank" href="https://melk0revshere.blogspot.com/">melk0revshere.blogspot.com</a></li>
+                
+            </ul>
+        
     </div>
 
 <p><small>
         
-        2023 &copy; Mihin Nimnaka
+        2024 &copy; Mihin Nimnaka
     </small></p>
-    <img src="/static/I_heart_validator.png">
+
+    <img src="http://www.anybrowser.org/campaign/bvgraphics/earth.gif">
+    <img src = "https://anlucas.neocities.org/bookmark_this_page.gif">
+    <img src = "https://anlucas.neocities.org/neocities_button.gif">
+    <img src="https://www.freebsd.org/gifs/power-button.gif">  
+    <img src="https://www.w3.org/QA/Tools/I_heart_validator">
     
+    
+      
 </footer>
 </div>
             </div>
@@ -420,6 +408,8 @@ struct එක declare කරන්නේ මෙහෙමයි ,</p>
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
+    
     </style>
+    
 </body>
 </html>

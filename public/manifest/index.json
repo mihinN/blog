@@ -1,17 +1,17 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "Melk0reWasHere",
-  "short_name": "Melk0reWasHere",
+  "name": "Melk0revsHere",
+  "short_name": "Melk0revsHere",
   "start_url": "/",
   "display": "standalone",
   
   
   
-  "background_color": "black",
+  "background_color": "#0F0F0F",
   "theme_color": "#db5793"
   
     ,
-    "description": "Hi, I am Mihin, a 22 year old information security student from Sri Lanka. And studying at NSBM Green University. Currently I am working on my personal projects and I hope to bring those stuff in the near future."
+    "description": "Hi, I am Mihin, a 23 year old information security student from Sri Lanka. And studying at NSBM Green University. Currently I am working on my personal projects and I hope to bring those stuff in the near future."
   
   
     ,

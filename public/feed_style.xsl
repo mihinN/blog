@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <meta charset="UTF-8"/>
         
-        <link type="text/css" rel="stylesheet" href="https://mihinn.github.io/blog/css/styles.d7fc55bf59679a772390dc40be43165b69f5892ef11c5cb43073b653e729354183b1652344eb750700053da549d8531de4cd15a33cb9230896be3e25f4510fa6.css" integrity="sha512-1/xVv1lnmncjkNxAvkMWW2n1iS7xHFy0MHO2U+cpNUGDsWUjROt1BwAFPaVJ2FMd5M0Vozy5IwiWvj4l9FEPpg==" />
+        <link type="text/css" rel="stylesheet" href="http://localhost:1313/blog/css/styles.354e81bcb9cdf09daa8dcabd47848e4d8808eee8cf1ba167c06dce3fed8da9b9a5efdad45a25868a72682d3ea6b073d473ab86096247cb2b80c687f74c96adf5.css" integrity="sha512-NU6BvLnN8J2qjcq9R4SOTYgI7ujPG6FnwG3OP+2Nqbml79rUWiWGinJoLT6msHPUc6uGCWJHyyuAxof3TJat9Q==" />
         <style>
           .aboutfeeds {
             margin: 24px 0; padding: 12px;
@@ -59,7 +59,7 @@
           </div>
           <div class="head">
             <div class="avatar">
-              <img class="logo" src="../fav.png" alt="Site Logo"/>
+              <img class="logo" src="https://raw.githubusercontent.com/mihinN/blog/main/fav.png" alt="Site Logo"/>
             </div>
             <div class="description">
               <p><xsl:value-of select="/rss/channel/description"/></p>
