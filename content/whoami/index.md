@@ -14,7 +14,7 @@ I am working on my personal projects, which you can explore below.
 
 - [*] Simple IDS 
 - [*] Scraper for my own use
-- [*] Simple game engine
+- [*] Simple game engine // 
 
 These days i'm cooking with Rust and hope to learn GO.
 
