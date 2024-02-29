@@ -14,7 +14,9 @@ tags:
 
 keywords:
     - c programming in සිංහල   
-    - Computer Science 
+    - Computer Science
+    - C
+    - Compilation process 
 
 ---
 
