@@ -38,6 +38,13 @@
       <description>Structs ගැන , Structs , C language එකේ විශේෂ ස්ථානයක් ගන්නවා , එයට හේතුව , අපි දන්නවා අපිට programme එක තුල අවශ්‍ය දෙයක් computer memory එකේ තබා ගැනීමට අවශ්‍ය වූ විට සිදු කරන්නේ , variable එකක් create කරන එක. උදාහරණයක් විදියට ගත්තොත් ..&#xA;int x=20 , y=30; ආකාරයට . struct තුලින් කරන්නෙත් මේ හා සමාන ක්‍රියාවලියක් (ඒ කියන්නේ memory එකට acces කිරීමක්) . හැබැයි මෙහි වෙනස් කමක් දක්නට පුළුවන්, ඒ .</description>
     </item>
     <item>
+      <title>Structs in C language / සිංහල</title>
+      <link>http://localhost:1313/blog/posts/2024-03-05-variables-in-c-language-sinhala/</link>
+      <pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/2024-03-05-variables-in-c-language-sinhala/</guid>
+      <description>මේ ලිපියෙන් කතා කරන්නෙ variables ගැන ,&#xA;සරලව , අපි programme එකක් ලියද්දි variables යොදා ගන්නේ Computer memory එකේ අපිට අවශ්‍ය data store ගැනීමට. පරිගනකෙයේ memory එක කිව්වම ඇවිල්ල විවිද type එකේ memory devices තියෙනවා , ඔයාල දන්නවා HARDDISK එක , RAM එක ඊළඟට ප්‍රමාණයෙන් පොඩි හැබැයි speed memory කොටසක් වන memory registers . හැබැයි variable එකක් create කර ගැනීමෙන් computer එකේ main memory එක ,එහෙමත් නැත්නම් ram එකේ අපිට අවශ්‍ය data ස්ටෝරේ කර ගැනීමක් තමයි වෙන්නේ .</description>
+    </item>
+    <item>
       <title>Google CrowdSource / සිංහල</title>
       <link>http://localhost:1313/blog/posts/2020-08-20-google-crowdsource/</link>
       <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
