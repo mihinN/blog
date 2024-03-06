@@ -47,6 +47,16 @@ int x=20 , y=30; ආකාරයට . struct තුලින් කරන්න�
     </item>
     
     <item>
+      <title>Variables in C Language / සිංහල</title>
+      <link>https://mihinn.github.io/blog/posts/2024-03-05-variables-in-c-language-sinhala/</link>
+      <pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mihinn.github.io/blog/posts/2024-03-05-variables-in-c-language-sinhala/</guid>
+      <description>මේ ලිපියෙන් කතා කරන්නෙ variables ගැන ,
+සරලව , අපි programme එකක් ලියද්දි variables යොදා ගන්නේ Computer memory එකේ අපිට අවශ්‍ය data store ගැනීමට. පරිගනකෙයේ memory එක කිව්වම ඇවිල්ල විවිද type එකේ memory devices තියෙනවා , ඔයාල දන්නවා HARDDISK එක , RAM එක ඊළඟට ප්‍රමාණයෙන් පොඩි හැබැයි speed memory කොටසක් වන memory registers . හැබැයි variable එකක් create කර ගැනීමෙන් computer එකේ main memory එක ,එහෙමත් නැත්නම් ram එකේ අපිට අවශ්‍ය data ස්ටෝරේ කර ගැනීමක් තමයි වෙන්නේ .</description>
+    </item>
+    
+    <item>
       <title>Google CrowdSource / සිංහල</title>
       <link>https://mihinn.github.io/blog/posts/2020-08-20-google-crowdsource/</link>
       <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
