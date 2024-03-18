@@ -1,1 +1,1 @@
-![alt text](/images/banner_one.jpeg "banner")
+![alt text](banner-fun.png)
