@@ -14,7 +14,7 @@
       <link>http://localhost:1313/blog/posts/2023-10-15-compilation-process-in-c/</link>
       <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/posts/2023-10-15-compilation-process-in-c/</guid>
-      <description>&amp;ldquo;C&amp;rdquo; compilation Process එක, කලින් ලිපියේ සදහන් කළා ඔයාලට මතක ඇති , අපි ලියපු programme එක compile කර ගැනීමේදී , ඒ compilation process එක steps කීපෙකට වෙන බව , ඉතින් අද අපි ඒ steps කීපය ගැන බලන්න තමයි යන්නේ . ඊට කලින් කවුරු හරි මේ ලිපියෙන් කියවන්න පටන් ගත්ත නම් ඒ අය සදහා මම පොඩි ආරම්බයක් විදියට අයෙත් මේ පොඩි විස්තරෙකින්ම පටන් ගන්නම් .&#xA;සරලවම , අපි compiler එකක් බාවිතයට ගන්නේ අපි ලියන programme එක machine එක බවට convert කර ගැනීමට , මොකද පරිගණකයට තේරෙන්නේ 0,1 එහෙමත් නැත්නම් binary නිසා , ඉතින් මේ සදහා විවිද පරිගණක බාෂා ඒ ඒ බාශාවට ගැලපෙන්න compilers නිර්මාණය කරලා තියෙනවා .</description>
+      <description>&amp;ldquo;C&amp;rdquo; compilation Process එක, කලින් ලිපියේ සදහන් කළා ඔයාලට මතක ඇති , අපි ලියපු programme එක compile කර ගැනීමේදී , ඒ compilation process එක steps කීපෙකට වෙන බව , ඉතින් අද අපි ඒ steps කීපය ගැන බලන්න තමයි යන්නේ . ඊට කලින් කවුරු හරි මේ ලිපියෙන් කියවන්න පටන් ගත්ත නම් ඒ අය සදහා මම පොඩි ආරම්බයක් විදියට අයෙත් මේ පොඩි විස්තරෙකින්ම පටන් ගන්නම් .&#xA;සරලවම , අපි compiler එකක් බාවිතයට ගන්නේ අපි ලියන programme එක machine code එක බවට convert කර ගැනීමට , මොකද පරිගණකයට තේරෙන්නේ 0,1 එහෙමත් නැත්නම් binaries නිසා , ඉතින් විවිද පරිගණක බාෂා ඒ ඒ බාශාවන්ට ගැලපෙන්න compilers නිර්මාණය කරලා තියෙනවා .</description>
     </item>
   </channel>
 </rss>
