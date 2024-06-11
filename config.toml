@@ -115,7 +115,7 @@ summaryLength = 70  # number of words for article summaries
     # in params above
     [[menu.main]]
         identifier = "whoami"
-        name = "whoami"
+        name = "WHOAMI?"
         url = "/whoami"
         weight = 2
 
@@ -123,13 +123,19 @@ summaryLength = 70  # number of words for article summaries
         identifier = "c_tuts"
         name = "C lessons"
         url = "/c_tuts"
-        weight = 10
+        weight = 3
     
     [[menu.main]]
         identifier = "networking_tuts"
         name = "networking Lessons"
         url = "/networking_tuts"
-        weight = 10
+        weight = 4
+
+     [[menu.main]]
+        identifier = "Projects"
+        name = "Projects"
+        url = "/projects"
+        weight = 5
 
      [[menu.main]]
         identifier = "other"
