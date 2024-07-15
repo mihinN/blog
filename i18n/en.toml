@@ -1,5 +1,5 @@
 [404message]
-other = "This is not the page you were looking for"
+other = "This is not the page you were looking for/මොනවත් නැත.."
 
 [searchbarTxt]
 other = "Search"
@@ -8,7 +8,7 @@ other = "Search"
 other = "Tags"
 
 [date]
-other = "Date"
+other = "Date/දිනය"
 
 [continueReading]
 other = "Continue reading"

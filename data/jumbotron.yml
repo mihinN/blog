@@ -1,6 +1,6 @@
-title: Melk0revsHere
-hugeTitle: false
-subtitle: Welcome to my Personal Blog !!! 
+# title: Melk0revsHere
+# hugeTitle: false
+# subtitle: Welcome to my Personal Blog !!! 
 # image: "https://cdn.pixabay.com/photo/2023/11/11/08/23/woman-8380758_1280.jpg"
 # imagePosition: right  # values: left, right, top, bottom
 # background: ""
@@ -9,13 +9,13 @@ subtitle: Welcome to my Personal Blog !!!
 # backgroundVideoMp4: "https://www.youtube.com/watch?v=GMWXqKZiyAI"
 # backgroundVideoWebm: "https://www.youtube.com/watch?v=GMWXqKZiyAI"
 # videoOpacity: 1
-textShadow: true
+# textShadow: true
 # fullscreen: false
 # downArrow: false
-whiteText: true  # force white text in the jumbotron
-links:
-  - title: WHOAMI
-    link: /blog/whoami
-  - title: Read my blog
-    link: /blog/posts
+# whiteText: true  # force white text in the jumbotron
+# links:
+#   - title: WHOAMI
+#     link: /blog/whoami
+#   - title: Read my blog
+#     link: /blog/posts
   
