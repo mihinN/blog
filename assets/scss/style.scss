@@ -1,6 +1,6 @@
 {{ $colors := .Site.Data.colors | default dict }}
 
-$dark_bg:          {{ $colors.dark.bg         | default "#242629" }};
+$dark_bg:          {{ $colors.dark.bg         | default "black" }};
 $dark_hl_bg:       {{ $colors.dark.hl_bg      | default "#34363b" }};
 $dark_fg:          {{ $colors.dark.fg         | default "white"   }};
 $dark_dim_fg:      {{ $colors.dark.dim_fg     | default "#bababa" }};
@@ -91,7 +91,7 @@ $title_font: {{ .Site.Params.titleFontFamily | default "$main_font" }};
 $mono_font: {{ .Site.Params.monospaceFontFamily | default "JetBrains Mono" }};
 $symbols_font: "Symbols Nerd Font";
 $content_width: {{ .Site.Params.contentWidth | default "1000px" }};
-$border_radius: 10px;
+$border_radius: 0px;
 $margin: 15px;
 
 $base_font_size: 16px;
