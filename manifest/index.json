@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "Melk0revsHere",
+  "short_name": "Melk0revsHere",
+  "start_url": "/",
+  "display": "standalone",
+  
+  
+  
+  "background_color": "black",
+  "theme_color": "#eacff8"
+  
+    ,
+    "description": "Hi, I am Mihin, a 23 year old information security student from Sri Lanka. And studying at NSBM Green University. Currently I am working on my personal projects and I hope to bring those stuff in the near future."
+  
+  
+    ,
+    "icons": [
+      {
+        "src": "fav.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      },
+      {
+        "src": "fav.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any"
+      }
+    ]
+  
+}
+
