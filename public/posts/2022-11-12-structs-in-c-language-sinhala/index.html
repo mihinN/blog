@@ -49,8 +49,10 @@
         <meta name="keywords" content='03 lesson, C language 101' />
     
     
-        <meta name="description" content="s , C language එකේ විශේෂ ස්ථානයක් ගන්නවා , එයට හේතුව , අපි දන්නවා අපිට programme එක තුල අවශ්‍ය දෙයක් computer memory එකේ තබා ගැනීමට අවශ්‍ය වූ විට සිදු කරන්නේ , variable එකක් create කරන එක. උදාහරණයක් විදියට ගත්තොත් ..
-int x=20 , y=30; ආකාරයට . struct තුලින් කරන්නෙත් මේ හා සමාන ක්‍රියාවලියක් (ඒ කියන්නේ memory එකට acces කිරීමක්) . හැබැයි මෙහි වෙනස් කමක් දක්නට පුළුවන්, ඒ ." />
+        <meta name="description" content="&#34;&gt;Structs  ගැන ,&lt;/h2&gt;
+&lt;p&gt;Structs , C language එකේ විශේෂ ස්ථානයක් ගන්නවා , එයට හේතුව  , අපි දන්නවා  අපිට programme එක තුල අවශ්‍ය දෙයක් computer memory එකේ තබා ගැනීමට අවශ්‍ය වූ විට සිදු කරන්නේ , variable එකක් create කරන එක. උදාහරණයක් විදියට ගත්තොත් ..&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;int x=20 , y=30;&lt;/code&gt; ආකාරයට .
+struct තුලින් කරන්නෙත් මේ හා සමාන ක්‍රියාවලියක් (ඒ කියන්නේ memory එකට acces කිරීමක්) . හැබැයි මෙහි වෙනස් කමක් දක්නට පුළුවන්, ඒ .. අපි variable එකක් create කරනකොට බාවිතා කරනවා data types කියලා ජාතියක් . int ,char ,short ,float ,long , double කියලා Data-types set එකක් අපි දැනටමත් දන්නවා , මේවට අපි කියනව pre-define data-types කියල, මොකද මේවා නිකන් standards වගේ එදා ඉදලා තිබ්බ දේවල් .&lt;/p&gt;" />
     
 
 <meta property="og:site_name"
@@ -81,7 +83,8 @@ int x=20 , y=30; ආකාරයට . struct තුලින් කරන්න�
     <meta property="og:image"
         content="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f68cf413-ab00-41fc-82fe-0a175144bf20/dfoguih-b630d9e3-21fa-4901-879a-36ab310d0ac2.png/v1/fill/w_1095,h_730,q_70,strp/ninja_rabbit_02_by_darkwhite2981_dfoguih-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjY4Y2Y0MTMtYWIwMC00MWZjLTgyZmUtMGExNzUxNDRiZjIwXC9kZm9ndWloLWI2MzBkOWUzLTIxZmEtNDkwMS04NzlhLTM2YWIzMTBkMGFjMi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.u5-DDBhA9TYBaFQ5lM58TNm-3_3JgxaUjoWCbT4CBgU" />
     
-        <meta property="og:description" content="Structs ගැන , Structs , C language එකේ විශේෂ ස්ථානයක් ගන්නවා , එයට හේතුව , අපි දන්නවා අපිට programme එක තුල අවශ්‍ය දෙයක් computer memory එකේ තබා ගැනීමට අවශ්‍ය ව" />
+        <meta property="og:description" content="&lt;h2 id=&#34;structs--ගන-&#34;&gt;Structs  ගැන ,&lt;/h2&gt;
+&lt;p&gt;Structs , C language එකේ විශේෂ ස්ථානයක් ගන්නවා , එයට හේතුව  , අපි දන්නවා  අපිට programme එක තුල අවශ්‍ය දෙයක් comput" />
     
 
 <meta name="twitter:card" content="summary_large_image" />
@@ -102,7 +105,8 @@ int x=20 , y=30; ආකාරයට . struct තුලින් කරන්න�
     <meta name="twitter:image"
         content="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f68cf413-ab00-41fc-82fe-0a175144bf20/dfoguih-b630d9e3-21fa-4901-879a-36ab310d0ac2.png/v1/fill/w_1095,h_730,q_70,strp/ninja_rabbit_02_by_darkwhite2981_dfoguih-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvZjY4Y2Y0MTMtYWIwMC00MWZjLTgyZmUtMGExNzUxNDRiZjIwXC9kZm9ndWloLWI2MzBkOWUzLTIxZmEtNDkwMS04NzlhLTM2YWIzMTBkMGFjMi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.u5-DDBhA9TYBaFQ5lM58TNm-3_3JgxaUjoWCbT4CBgU" />
     
-        <meta name="twitter:description" content="Structs ගැන , Structs , C language එකේ විශේෂ ස්ථානයක් ගන්නවා , එයට හේතුව , අපි දන්නවා අපිට programme එක තුල අවශ්‍ය දෙයක් computer memory එකේ තබා ගැනීමට අවශ්‍ය ව" />
+        <meta name="twitter:description" content="&lt;h2 id=&#34;structs--ගන-&#34;&gt;Structs  ගැන ,&lt;/h2&gt;
+&lt;p&gt;Structs , C language එකේ විශේෂ ස්ථානයක් ගන්නවා , එයට හේතුව  , අපි දන්නවා  අපිට programme එක තුල අවශ්‍ය දෙයක් comput" />
     
 
 <link rel="manifest" href="/manifest/index.json" />
