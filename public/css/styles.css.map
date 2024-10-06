@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "/home/mihin/Desktop/blog",
+	"sourceRoot": "/home/melkre/Desktop/PC/blog",
 	"sources": [
 		"assets/scss/style.scss"
 	],
