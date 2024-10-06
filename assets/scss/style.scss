@@ -92,7 +92,7 @@ $mono_font: {{ .Site.Params.monospaceFontFamily | default "JetBrains Mono" }};
 $symbols_font: "Symbols Nerd Font";
 $content_width: {{ .Site.Params.contentWidth | default "1000px" }};
 $border_radius: 0px;
-$margin: 15px;
+$margin: 5px;
 
 $base_font_size: 16px;
 $title_font_mult: {{ .Site.Params.titleFontSizeMultiplier | default 1.0 }};
@@ -336,7 +336,7 @@ h6 {font-size: 0.7 * $base_font_size * $title_font_mult;}
 .nerd {
     font-family: $symbols_font, $main_font;
     font-size: 1.2 * $base_font_size;
-    margin: 5px;
+    margin: 12px;
     display: inline-block;
 }
 
@@ -442,7 +442,7 @@ h6 {font-size: 0.7 * $base_font_size * $title_font_mult;}
 
 ul {
     li {
-        margin: 5px 0;
+        margin: 2px 0;
     }
 }
 
@@ -741,7 +741,7 @@ input, textarea, textarea.cactus-editor-textarea {
 }
 
 .cactus-login-form {
-   {{ if (eq (site.Params.inputStyle | default "standard") "buttons") }} 
+   {{ if (eq (site.Params.inputStyle | default "standard") "buttons") }}
         border-radius: $border_radius;
     {{ else }}
         border-radius: 0;
@@ -788,7 +788,7 @@ input, textarea, textarea.cactus-editor-textarea {
     display: none;
     position: fixed;
     top: 0; bottom: 0; left: 0; right: 0;
-    
+
     .dialog {
         {{ if (.Site.Params.enableShadow | default false) }}
             box-shadow: $shadow;
@@ -904,12 +904,12 @@ input, textarea, textarea.cactus-editor-textarea {
     }
 {{ end }}
 
-{{ if and 
+{{ if and
     (.Site.Params.enableJumbotron | default false)
     .Site.Data.jumbotron
 }}
 {{
-    $jumbo_fullscreen := (or 
+    $jumbo_fullscreen := (or
         (.Site.Data.jumbotron.fullscreen | default false)
         (.Site.Data.jumbotron.backgroundVideo)
     )
