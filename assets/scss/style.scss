@@ -91,7 +91,7 @@ $title_font: {{ .Site.Params.titleFontFamily | default "$main_font" }};
 $mono_font: {{ .Site.Params.monospaceFontFamily | default "JetBrains Mono" }};
 $symbols_font: "Symbols Nerd Font";
 $content_width: {{ .Site.Params.contentWidth | default "1000px" }};
-$border_radius: 0px;
+$border_radius: 1px;
 $margin: 5px;
 
 $base_font_size: 16px;
