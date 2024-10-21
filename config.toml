@@ -41,7 +41,7 @@ logoRightOfTitle = false # positions the logo to the right of the title; default
 showTags = false # show the Tags menu item; default true
 showRss = true   # show the link for the RSS feed; default true
 
-imageInArticlePreview = true           # show images in article preview; default false
+imageInArticlePreview = false          # show images in article preview; default false
 fitImageInArticlePreview = false       # make article preview images fit the article preview instead of getting cropped
 articleSummary = false                 # show a summary in article preview; default true
 fontFamily = "JetBrains Mono"          # changes the font, default "JetBrains Mono"
