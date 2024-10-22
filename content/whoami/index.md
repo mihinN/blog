@@ -6,7 +6,7 @@ date: 2024-02-05
 ### A passionate security researcher, Developer, and a Writer.
 
 Hi! I'm Mihin, Infosec undergraduate from Sri Lanka.
-I am passionate about security research and software development, especially system software on Linux and Windows.
+I am passionate about security research and software development, specially system software on Linux and Windows.
 I also write about my thoughts, programming stuffs, computer science, and computer security-related topics on here.
 Additionally, I plan to publish a full C programming series here.
 
