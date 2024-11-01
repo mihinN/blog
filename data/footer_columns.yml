@@ -1,22 +1,29 @@
 - title: My other projects
   links:
+    - title: CVD Parser
+      link: https://github.com/mihinN/net-moniter-1.0v-scratch
+    - title: Simple Text Editor
+      link: https://github.com/mihinN/SYPAD/blob/main/Screenshot%202023-12-26%20190408.png
     - title: Network Monitering Tool
       link: https://github.com/mihinN/net-moniter-1.0v-scratch
+
 - title: About me
   links:
     - title: My personal website
       link: https://mihinn.github.io/blog
 - title: Discuss
-  links: 
+  links:
     - title: Github
       link: https://github.com/mihinN/blog/discussions
 - title: Neocities
-  links: 
+  links:
     - title: melk0re.neocities.org
       link: https://melk0re.neocities.org/
 - title: Coredump
-  links: 
+  links:
     - title: melk0revshere.blogspot.com
       link: https://melk0revshere.blogspot.com/
-      
-  
+- title: Substack
+  links:
+    - title: fangornforest.substack.com
+      link: https://fangornforest.substack.com/
