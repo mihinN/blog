@@ -43,7 +43,7 @@ showRss = true   # show the link for the RSS feed; default true
 
 imageInArticlePreview = false          # show images in article preview; default false
 fitImageInArticlePreview = false       # make article preview images fit the article preview instead of getting cropped
-articleSummary = true                  # show a summary in article preview; default true
+articleSummary = false                  # show a summary in article preview; default true
 fontFamily = "JetBrains Mono"          # changes the font, default "JetBrains Mono"
 titleFontFamily = "JetBrains Mono"     # font used for titles and headings
 monospaceFontFamily = "JetBrains Mono" # changes the monospace font for code, default "JetBrains Mono"
