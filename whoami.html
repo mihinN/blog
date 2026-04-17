@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self';
+                   script-src 'self';
+                   style-src 'self' 'unsafe-inline';
+                   img-src 'self' data:;
+                   frame-ancestors 'none';
+                   base-uri 'self';
+                   form-action 'self';
+                   object-src 'none'">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <title>WHOAMI</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
-<style>
-</style>
 <body>
     <header>
         <div class="header-content">
@@ -23,15 +31,14 @@
 
     <main>
         <section class="hero about-hero">
-          Hi! I’m Mihin Nimnaka, a security researcher and programmer. <br>
+          Hi! I'm Mihin Nimnaka, a security researcher and programmer. <br>
           I enjoy building and cracking systems. <br>
-          I’m still learning <br>
+          I'm still learning. <br>
           Coding in C, Rust, and Python. <br>
           I also do a bit of work with Intel x86 assembly. <br>
           I like low-level programming. <br>
           I love computers! <br>
         </section>
-
     </main>
 
     <footer>

@@ -3,8 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <!--
+      Baseline CSP. Tightens script/style sources, blocks framing (clickjacking),
+      restricts form targets. Adjust if you add new CDNs.
+    -->
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self';
+                   script-src 'self' 'unsafe-inline';
+                   style-src 'self' 'unsafe-inline';
+                   img-src 'self' data:;
+                   font-src 'self';
+                   connect-src 'self';
+                   frame-ancestors 'none';
+                   base-uri 'self';
+                   form-action 'self';
+                   object-src 'none'">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <title>INDEX</title>
-    <link rel = "stylesheet" type="text/css" href = "css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <style>
     p, a {
       color: inherit;
@@ -88,7 +105,7 @@
       animation: crtTurnOn 0.6s ease-out forwards;
     }
 
-    /* ===== CHAT SCREEN — matches main site monospace/amber vibe ===== */
+    /* ===== CHAT SCREEN ===== */
     #chat-screen {
       position: absolute;
       top: 0; left: 0;
@@ -107,7 +124,6 @@
       visibility: visible;
     }
 
-    /* Chat wrapper — centered column */
     .chat-wrapper {
       width: 100%;
       max-width: 620px;
@@ -116,7 +132,6 @@
       flex-direction: column;
     }
 
-    /* Chat header */
     .chat-header {
       display: flex;
       align-items: center;
@@ -165,7 +180,6 @@
       flex-shrink: 0;
     }
 
-    /* Chat messages area */
     .chat-messages {
       flex: 1;
       overflow-y: auto;
@@ -177,7 +191,6 @@
       background: #f9fafb;
     }
 
-    /* Message bubble base */
     .chat-bubble {
       max-width: 88%;
       padding: 11px 16px;
@@ -197,7 +210,6 @@
       }
     }
 
-    /* Cat messages — warm/amber tinted to match site */
     .bubble-cat {
       background: #fffbeb;
       color: #374151;
@@ -234,7 +246,6 @@
       font-size: 2.85em;
     }
 
-    /* Angry bubble — red accent */
     .bubble-angry {
       background: #fef2f2;
       color: #991b1b;
@@ -243,7 +254,6 @@
       font-weight: 600;
     }
 
-    /* Kind/grateful bubble — green accent */
     .bubble-kind {
       background: #f0fdf4;
       color: #374151;
@@ -261,7 +271,6 @@
       font-style: italic;
     }
 
-    /* Final golden bubble */
     .bubble-final {
       background: linear-gradient(135deg, #fef3c7, #fde68a);
       color: #78350f;
@@ -273,7 +282,6 @@
       font-size: 0.9rem;
     }
 
-    /* Typing indicator */
     .typing-indicator {
       align-self: flex-start;
       display: flex;
@@ -302,7 +310,6 @@
       30% { transform: translateY(-5px); opacity: 1; }
     }
 
-    /* Time separator */
     .chat-time {
       text-align: center;
       color: #9ca3af;
@@ -310,7 +317,6 @@
       padding: 6px 0 10px;
     }
 
-    /* Footer — apology button */
     .chat-footer {
       padding: 14px 20px;
       border-top: 1px solid #e5e7eb;
@@ -351,71 +357,67 @@
       transform: translateY(0) scale(0.98);
     }
 
-    /* ===== Responsive ===== */
     @media (max-width: 640px) {
       .chat-bubble { max-width: 92%; font-size: 0.8rem; }
       .chat-header { padding: 12px 14px; }
       .chat-messages { padding: 14px 12px; }
     }
     </style>
-
 </head>
 <body>
   <div id="rainContainer" class="rain-container"></div>
 
   <!-- CRT overlay + chat -->
-  <div id="crt-overlay">
+  <div id="crt-overlay" aria-hidden="true">
     <canvas id="tv-static"></canvas>
     <div id="crt-line"></div>
     <div id="crt-scanlines"></div>
 
     <div id="chat-screen">
       <div class="chat-wrapper">
-        <!-- Header -->
         <div class="chat-header">
-          <div class="chat-avatar">😾</div>
+          <div class="chat-avatar" role="img" aria-label="Angry cat face">😾</div>
           <div class="chat-contact-info">
             <div class="chat-contact-name">The Cat</div>
             <div class="chat-contact-status">⚡ angry since 3000 BC</div>
           </div>
-          <div class="chat-hieroglyph">𓃠 𓂀 𓃠</div>
+          <div class="chat-hieroglyph" aria-hidden="true">𓃠 𓂀 𓃠</div>
         </div>
 
-        <!-- Messages -->
         <div class="chat-messages" id="chatMessages">
           <div class="chat-time">Today</div>
         </div>
 
-        <!-- Footer -->
         <div class="chat-footer" id="chatFooter">
-          <button id="apologize-btn">🙇 I'm Sorry, Your Majesty</button>
+          <button id="apologize-btn" type="button">🙇 I'm Sorry, Your Majesty</button>
         </div>
       </div>
     </div>
   </div>
 
     <main>
-        <section class="hero" style = "padding: 20%">
+        <section class="hero" style="padding: 20%">
             <h1>Melk0reVSHere</h1>
             <script src="js/script.js"></script>
             <p>
               Welcome to My simple webpage! <br>
               All my thoughts and projects are in here.<br>
-              if you want to know little bit about me , just click here <a href= "whoami.html">WHOAMI?</a> <br>
-              All my projects are listed on here <a href = "projects.html">PROJECTS</a>. <br>
-            <h3><a href = "https://fangornforest.substack.com/">Check out my Blog</a>
-              <br></h3>Sometimes i write about <b>computer security</b> , <b> programming</b> and <b>Networking</b>. <br>
-                Here is My C tutorial series,  <a href = "https://fangornforest.substack.com/p/c-programming-lessons"> <br> C Programming</a> <br>
-                This is mostly in <b>Sinhala(//සිංහල//)</b> Language.
-            </p> <br>
+              if you want to know little bit about me , just click here <a href="whoami.html">WHOAMI?</a> <br>
+              All my projects are listed on here <a href="projects.html">PROJECTS</a>.
+            </p>
+            <h3><a href="https://fangornforest.substack.com/" target="_blank" rel="noopener noreferrer">Check out my Blog</a></h3>
+            <p>
+              Sometimes i write about <b>computer security</b>, <b>programming</b> and <b>Networking</b>. <br>
+              Here is My C tutorial series, <a href="https://fangornforest.substack.com/p/c-programming-lessons" target="_blank" rel="noopener noreferrer">C Programming</a>. <br>
+              This is mostly in <b>Sinhala (සිංහල)</b> Language.
+            </p>
 
-            <p>This is My <a href= "https://github.com/mihinN"><b>GITHUB</b></a></p>
-            <p>This is My <a href= "https://www.linkedin.com/in/mihin-nimnaka"><b>LINKDIN</b></a></p>
+            <p>This is My <a href="https://github.com/mihinN" target="_blank" rel="noopener noreferrer"><b>GITHUB</b></a></p>
+            <p>This is My <a href="https://www.linkedin.com/in/mihin-nimnaka" target="_blank" rel="noopener noreferrer"><b>LINKEDIN</b></a></p>
 
         </section>
 
   </main>
-</div>
 
     <footer>
         <p>© 2019 - 2026 Melk0reVShere</p>
@@ -423,6 +425,8 @@
 
     <script>
     (function() {
+      'use strict';
+
       const CAT_EMOJIS = ['😹', '😸', '😻', '🐱', '😺'];
       const EMOJI_COUNT = 40;
       const DOUBLE_CLICK_WINDOW = 400;
@@ -433,61 +437,140 @@
       let isRaining = false;
       let isShutdown = false;
 
-      const crtOverlay = document.getElementById('crt-overlay');
-      const tvStatic = document.getElementById('tv-static');
-      const crtLine = document.getElementById('crt-line');
+      const crtOverlay   = document.getElementById('crt-overlay');
+      const tvStatic     = document.getElementById('tv-static');
+      const crtLine      = document.getElementById('crt-line');
       const crtScanlines = document.getElementById('crt-scanlines');
-      const chatScreen = document.getElementById('chat-screen');
+      const chatScreen   = document.getElementById('chat-screen');
       const chatMessages = document.getElementById('chatMessages');
-      const chatFooter = document.getElementById('chatFooter');
+      const chatFooter   = document.getElementById('chatFooter');
       const apologizeBtn = document.getElementById('apologize-btn');
+
+      // ===== SAFE HTML BUILDER =====
+      // Instead of `innerHTML = ...` on untrusted strings, we use a small
+      // schema: each message is a list of segments. "text" segments become
+      // textContent (safe). "span" segments become <span class="x">text</span>
+      // with the class whitelisted. This closes the XSS door even if you
+      // later source messages from URLs, localStorage, or a server.
+      const ALLOWED_CLASSES = new Set(['era', 'name', 'kind', 'flex-text', 'cmd']);
+
+      function seg(cls, text) { return { cls, text }; }
+      function t(text)        { return { text }; }
+
+      function renderSegments(parent, segments) {
+        for (const s of segments) {
+          if (s.cls && ALLOWED_CLASSES.has(s.cls)) {
+            const span = document.createElement('span');
+            span.className = s.cls;
+            span.textContent = s.text;
+            parent.appendChild(span);
+          } else {
+            parent.appendChild(document.createTextNode(s.text));
+          }
+        }
+      }
 
       // ===== CAT'S MESSAGES =====
       const catMessages = [
-        { text: "You just clicked me 5 times.", type: "angry" },
-        { text: "FIVE. TIMES. 🐾", type: "angry" },
-        { text: "Do you have ANY idea who I am?", type: "angry" },
-        { text: "Sit down. Let me educate you, human.", type: "cat" },
+        { type: "angry", segs: [t("You just clicked me 5 times.")] },
+        { type: "angry", segs: [t("FIVE. TIMES. 🐾")] },
+        { type: "angry", segs: [t("Do you have ANY idea who I am?")] },
+        { type: "cat",   segs: [t("Sit down. Let me educate you, human.")] },
 
-        { text: '<span class="era">~3000 BC</span> — Egyptians worshipped me as <span class="name">Goddess Bastet</span>. Killing a cat was punishable by death. I had legal protection before you had human rights. 🏛️', type: "cat" },
-
-        { text: '<span class="era">1843</span> — I sat on <span class="name">Aunt Ada Lovelace</span>\'s desk while she wrote the first algorithm. She called it "a note." <span class="flex-text">I call it "my warm laptop."</span> 💅', type: "cat" },
-
-        { text: '<span class="era">1936</span> — Uncle <span class="name">Alan Turing</span> defined computation with his Turing Machine. I walked across his paper tape. <span class="flex-text">First cat-caused bug in history. You\'re welcome.</span>', type: "cat" },
-
-        { text: '<span class="era">1945</span> — <span class="name">Grace Hopper</span> found a moth in the Mark II and invented "debugging." <span class="flex-text">I ate that moth. She never thanked me.</span> 🦗', type: "cat" },
-
-        { text: '<span class="era">1947</span> — <span class="name">Shockley, Bardeen & Brattain</span> invented the transistor at Bell Labs. I knocked the germanium sample off the table twice. <span class="flex-text">They soldered faster after that.</span>', type: "cat" },
-
-        { text: '<span class="era">1957</span> — The <span class="name">"Traitorous Eight"</span> left Shockley to found <span class="name">Fairchild Semiconductor</span>. <span class="flex-text">I was the ninth. They didn\'t put me on the paperwork. Typical.</span> 😒', type: "cat" },
-
-        { text: '<span class="era">1965</span> — <span class="name">Gordon Moore</span> predicted transistors double every two years. <span class="flex-text">I predicted my food bowl should double every two years. Only one of us was taken seriously.</span>', type: "cat" },
-
-        { text: '<span class="era">1969</span> — <span class="name">Dennis Ritchie</span> and <span class="name">Ken Thompson</span> at AT&T Bell Labs started building UNIX. <span class="kind">Those two were kind to me.</span> Dennis let me sleep on the warm PDP-7. Ken gave me snacks between compile cycles. <span class="flex-text">So I let them name a command after me.</span> That\'s respect. 🤝', type: "kind" },
-
-        { text: '<span class="era">1971</span> — <span class="name">Intel</span> released the <span class="name">4004</span>, first microprocessor. 2,300 transistors. <span class="flex-text">I had more brain cells in one whisker, but sure, celebrate.</span>', type: "cat" },
-
-        { text: '<span class="era">1976</span> — <span class="name">Steve Wozniak</span> hand-built the Apple I in a garage. <span class="flex-text">I slept in that garage. He worked around me. As he should.</span> 🍎', type: "cat" },
-
-        { text: '<span class="era">1986</span> — <span class="name">The Mentor</span> published <span class="name">The Hacker\'s Manifesto</span>. "We explore... and you call us criminals." <span class="flex-text">I felt that. I\'ve been breaking into houses since the Pharaohs. Same energy.</span> 💀', type: "cat" },
-
-        { text: '<span class="era">1991</span> — <span class="name">IBM</span>, <span class="name">Apple</span> & <span class="name">Motorola</span> built the PowerPC. Everyone said "RISC is going to change everything!" I sat on their RISC architecture diagrams. <span class="flex-text">They thought my paw print was a new branch prediction instruction. The chip ran 3% faster. They never figured out why.</span> 🐾', type: "cat" },
-
-        { text: '<span class="era">1991</span> — <span class="name">Linus Torvalds</span> posted "I\'m doing a (free) operating system." He literally named a command <span class="cmd">cat</span>. <span class="flex-text">I rest my case.</span> 🐧', type: "cat" },
-
-        { text: '<span class="era">1995</span> — <span class="name">Brendan Eich</span> wrote JavaScript in 10 days. <span class="flex-text">I sat on his keyboard for 3 of those days. That explains a lot, actually.</span> 😂', type: "cat" },
-
-        { text: '<span class="era">2005</span> — <span class="name">Linus</span> built <span class="name">Git</span> in a rage after BitKeeper revoked the free license. <span class="flex-text">I knocked his coffee over that morning. You\'re welcome for version control.</span> ☕', type: "cat" },
-
-        { text: 'Every Linux user types <span class="cmd">cat</span> daily. Every TCP connection starts with a handshake — <span class="flex-text">a gesture I taught humans 5000 years ago when I extended my paw for treats.</span>', type: "cat" },
-
-        { text: "So before you click me again...", type: "cat" },
-
-        { text: "I am not a pet. I am infrastructure. 👑", type: "final" },
+        { type: "cat", segs: [
+          seg("era", "~3000 BC"), t(" — Egyptians worshipped me as "),
+          seg("name", "Goddess Bastet"), t(". Killing a cat was punishable by death. I had legal protection before you had human rights. 🏛️")
+        ]},
+        { type: "cat", segs: [
+          seg("era", "1843"), t(" — I sat on "),
+          seg("name", "Aunt Ada Lovelace"), t("'s desk while she wrote the first algorithm. She called it \"a note.\" "),
+          seg("flex-text", "I call it \"my warm laptop.\""), t(" 💅")
+        ]},
+        { type: "cat", segs: [
+          seg("era", "1936"), t(" — Uncle "),
+          seg("name", "Alan Turing"), t(" defined computation with his Turing Machine. I walked across his paper tape. "),
+          seg("flex-text", "First cat-caused bug in history. You're welcome.")
+        ]},
+        { type: "cat", segs: [
+          seg("era", "1945"), t(" — "),
+          seg("name", "Grace Hopper"), t(" found a moth in the Mark II and invented \"debugging.\" "),
+          seg("flex-text", "I ate that moth. She never thanked me."), t(" 🦗")
+        ]},
+        { type: "cat", segs: [
+          seg("era", "1947"), t(" — "),
+          seg("name", "Shockley, Bardeen & Brattain"), t(" invented the transistor at Bell Labs. I knocked the germanium sample off the table twice. "),
+          seg("flex-text", "They soldered faster after that.")
+        ]},
+        { type: "cat", segs: [
+          seg("era", "1957"), t(" — The "),
+          seg("name", "\"Traitorous Eight\""), t(" left Shockley to found "),
+          seg("name", "Fairchild Semiconductor"), t(". "),
+          seg("flex-text", "I was the ninth. They didn't put me on the paperwork. Typical."), t(" 😒")
+        ]},
+        { type: "cat", segs: [
+          seg("era", "1965"), t(" — "),
+          seg("name", "Gordon Moore"), t(" predicted transistors double every two years. "),
+          seg("flex-text", "I predicted my food bowl should double every two years. Only one of us was taken seriously.")
+        ]},
+        { type: "kind", segs: [
+          seg("era", "1969"), t(" — "),
+          seg("name", "Dennis Ritchie"), t(" and "),
+          seg("name", "Ken Thompson"), t(" at AT&T Bell Labs started building UNIX. "),
+          seg("kind", "Those two were kind to me."), t(" Dennis let me sleep on the warm PDP-7. Ken gave me snacks between compile cycles. "),
+          seg("flex-text", "So I let them name a command after me."), t(" That's respect. 🤝")
+        ]},
+        { type: "cat", segs: [
+          seg("era", "1971"), t(" — "),
+          seg("name", "Intel"), t(" released the "),
+          seg("name", "4004"), t(", first microprocessor. 2,300 transistors. "),
+          seg("flex-text", "I had more brain cells in one whisker, but sure, celebrate.")
+        ]},
+        { type: "cat", segs: [
+          seg("era", "1976"), t(" — "),
+          seg("name", "Steve Wozniak"), t(" hand-built the Apple I in a garage. "),
+          seg("flex-text", "I slept in that garage. He worked around me. As he should."), t(" 🍎")
+        ]},
+        { type: "cat", segs: [
+          seg("era", "1986"), t(" — "),
+          seg("name", "The Mentor"), t(" published "),
+          seg("name", "The Hacker's Manifesto"), t(". \"We explore... and you call us criminals.\" "),
+          seg("flex-text", "I felt that. I've been breaking into houses since the Pharaohs. Same energy."), t(" 💀")
+        ]},
+        { type: "cat", segs: [
+          seg("era", "1991"), t(" — "),
+          seg("name", "IBM"), t(", "),
+          seg("name", "Apple"), t(" & "),
+          seg("name", "Motorola"), t(" built the PowerPC. Everyone said \"RISC is going to change everything!\" I sat on their RISC architecture diagrams. "),
+          seg("flex-text", "They thought my paw print was a new branch prediction instruction. The chip ran 3% faster. They never figured out why."), t(" 🐾")
+        ]},
+        { type: "cat", segs: [
+          seg("era", "1991"), t(" — "),
+          seg("name", "Linus Torvalds"), t(" posted \"I'm doing a (free) operating system.\" He literally named a command "),
+          seg("cmd", "cat"), t(". "),
+          seg("flex-text", "I rest my case."), t(" 🐧")
+        ]},
+        { type: "cat", segs: [
+          seg("era", "1995"), t(" — "),
+          seg("name", "Brendan Eich"), t(" wrote JavaScript in 10 days. "),
+          seg("flex-text", "I sat on his keyboard for 3 of those days. That explains a lot, actually."), t(" 😂")
+        ]},
+        { type: "cat", segs: [
+          seg("era", "2005"), t(" — "),
+          seg("name", "Linus"), t(" built "),
+          seg("name", "Git"), t(" in a rage after BitKeeper revoked the free license. "),
+          seg("flex-text", "I knocked his coffee over that morning. You're welcome for version control."), t(" ☕")
+        ]},
+        { type: "cat", segs: [
+          t("Every Linux user types "),
+          seg("cmd", "cat"), t(" daily. Every TCP connection starts with a handshake — "),
+          seg("flex-text", "a gesture I taught humans 5000 years ago when I extended my paw for treats.")
+        ]},
+        { type: "cat",   segs: [t("So before you click me again...")] },
+        { type: "final", segs: [t("I am not a pet. I am infrastructure. 👑")] },
       ];
 
       // ===== CLICK DETECTION =====
-      document.addEventListener('click', function(e) {
+      function onDocumentClick(e) {
         if (isShutdown) return;
         const neko = document.getElementById('oneko');
         if (!neko) return;
@@ -502,7 +585,7 @@
         if (dist > CLICK_RADIUS) return;
 
         const now = Date.now();
-        clickTimestamps = clickTimestamps.filter(t => now - t < MULTI_CLICK_WINDOW);
+        clickTimestamps = clickTimestamps.filter(function (t) { return now - t < MULTI_CLICK_WINDOW; });
         clickTimestamps.push(now);
 
         if (clickTimestamps.length >= 5) {
@@ -517,15 +600,16 @@
             startCatRain();
           }
         }
-      });
+      }
+      document.addEventListener('click', onDocumentClick);
 
       // ===== EMOJI RAIN =====
       function startCatRain() {
         isRaining = true;
         for (let i = 0; i < EMOJI_COUNT; i++) {
-          setTimeout(() => spawnEmoji(), i * 60);
+          setTimeout(spawnEmoji, i * 60);
         }
-        setTimeout(() => { isRaining = false; }, EMOJI_COUNT * 60 + 4000);
+        setTimeout(function () { isRaining = false; }, EMOJI_COUNT * 60 + 4000);
       }
 
       function spawnEmoji() {
@@ -537,63 +621,80 @@
         const duration = 2 + Math.random() * 3;
         emoji.style.animationDuration = duration + 's';
         document.body.appendChild(emoji);
-        setTimeout(() => emoji.remove(), duration * 1000 + 100);
+        setTimeout(function () { emoji.remove(); }, duration * 1000 + 100);
       }
 
       // ===== CRT SHUTDOWN =====
       function triggerCRTShutdown() {
         isShutdown = true;
         isRaining = false;
-        document.querySelectorAll('.cat-emoji').forEach(el => el.remove());
+        document.querySelectorAll('.cat-emoji').forEach(function (el) { el.remove(); });
 
         // Reset chat
-        chatMessages.innerHTML = '<div class="chat-time">Today</div>';
+        chatMessages.textContent = '';
+        const timeDiv = document.createElement('div');
+        timeDiv.className = 'chat-time';
+        timeDiv.textContent = 'Today';
+        chatMessages.appendChild(timeDiv);
         chatFooter.classList.remove('visible');
 
         crtOverlay.classList.add('active');
+        crtOverlay.setAttribute('aria-hidden', 'false');
         crtOverlay.style.background = 'transparent';
         crtLine.style.opacity = '0';
         tvStatic.classList.remove('visible');
 
-        setTimeout(() => {
+        setTimeout(function () {
           crtOverlay.style.background = '#fff';
-          setTimeout(() => {
+          setTimeout(function () {
             crtOverlay.style.transition = 'background 0.3s';
             crtOverlay.style.background = '#000';
             crtLine.style.opacity = '1';
             crtLine.style.transition = 'none';
             crtLine.style.height = '100%';
-            requestAnimationFrame(() => {
+            requestAnimationFrame(function () {
               crtLine.style.transition = 'height 0.6s ease-in, opacity 0.8s ease-in 0.5s';
               crtLine.style.height = '2px';
-              setTimeout(() => { crtLine.style.opacity = '0'; }, 600);
+              setTimeout(function () { crtLine.style.opacity = '0'; }, 600);
             });
           }, 80);
         }, 50);
 
-        setTimeout(() => {
+        setTimeout(function () {
           tvStatic.classList.add('visible');
           crtScanlines.style.opacity = '1';
           startStaticNoise();
 
-          setTimeout(() => {
+          setTimeout(function () {
             tvStatic.style.transition = 'opacity 0.8s';
             tvStatic.style.opacity = '0';
             crtScanlines.style.transition = 'opacity 0.8s';
             crtScanlines.style.opacity = '0';
+            // Once the static has faded, stop the animation loop to save CPU/battery
+            setTimeout(stopStaticNoise, 800);
             chatScreen.classList.add('visible');
-            setTimeout(() => startChatSequence(), 600);
+            setTimeout(startChatSequence, 600);
           }, 1500);
         }, 1400);
       }
 
       // ===== CHAT SEQUENCE =====
+      let chatTimeouts = [];
+      function clearChatTimeouts() {
+        chatTimeouts.forEach(clearTimeout);
+        chatTimeouts = [];
+      }
+
       function startChatSequence() {
+        clearChatTimeouts();
         let msgIndex = 0;
 
         function sendNext() {
+          if (isShutdown === false) return; // aborted
           if (msgIndex >= catMessages.length) {
-            setTimeout(() => { chatFooter.classList.add('visible'); }, 500);
+            chatTimeouts.push(setTimeout(function () {
+              chatFooter.classList.add('visible');
+            }, 500));
             return;
           }
 
@@ -603,20 +704,20 @@
 
           const typingDuration = 600 + Math.random() * 900;
 
-          setTimeout(() => {
+          chatTimeouts.push(setTimeout(function () {
             typing.remove();
 
             const msg = catMessages[msgIndex];
             const bubble = document.createElement('div');
             bubble.className = 'chat-bubble bubble-' + msg.type;
-            bubble.innerHTML = msg.text;
+            renderSegments(bubble, msg.segs);   // safe: no innerHTML
             chatMessages.appendChild(bubble);
             scrollToBottom();
 
             msgIndex++;
             const nextDelay = 350 + Math.random() * 550;
-            setTimeout(sendNext, nextDelay);
-          }, typingDuration);
+            chatTimeouts.push(setTimeout(sendNext, nextDelay));
+          }, typingDuration));
         }
 
         sendNext();
@@ -625,7 +726,11 @@
       function createTypingIndicator() {
         const el = document.createElement('div');
         el.className = 'typing-indicator';
-        el.innerHTML = '<div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div>';
+        for (let i = 0; i < 3; i++) {
+          const dot = document.createElement('div');
+          dot.className = 'typing-dot';
+          el.appendChild(dot);
+        }
         return el;
       }
 
@@ -637,11 +742,14 @@
       let staticAnimId = null;
 
       function startStaticNoise() {
+        stopStaticNoise(); // guard against double-start
         const canvas = tvStatic;
         const ctx = canvas.getContext('2d');
-        canvas.width = window.innerWidth / 4;
-        canvas.height = window.innerHeight / 4;
+        if (!ctx) return;
+        canvas.width  = Math.max(1, Math.floor(window.innerWidth  / 4));
+        canvas.height = Math.max(1, Math.floor(window.innerHeight / 4));
         canvas.style.imageRendering = 'pixelated';
+
         function drawStatic() {
           const imageData = ctx.createImageData(canvas.width, canvas.height);
           const data = imageData.data;
@@ -663,8 +771,9 @@
       }
 
       // ===== RESTORE =====
-      apologizeBtn.addEventListener('click', function(e) {
+      apologizeBtn.addEventListener('click', function (e) {
         e.stopPropagation();
+        clearChatTimeouts();
         chatScreen.classList.remove('visible');
         stopStaticNoise();
 
@@ -674,10 +783,11 @@
         crtScanlines.style.opacity = '0';
         crtLine.style.opacity = '0';
 
-        setTimeout(() => {
+        setTimeout(function () {
           crtOverlay.classList.add('turning-on');
-          setTimeout(() => {
+          setTimeout(function () {
             crtOverlay.classList.remove('active', 'turning-on');
+            crtOverlay.setAttribute('aria-hidden', 'true');
             crtOverlay.style.transition = '';
             crtOverlay.style.background = '#000';
             tvStatic.style.transition = '';

@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self';
+                   script-src 'self';
+                   style-src 'self' 'unsafe-inline';
+                   img-src 'self' data:;
+                   frame-ancestors 'none';
+                   base-uri 'self';
+                   form-action 'self';
+                   object-src 'none'">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <title>RABBITHOLE 1.0v</title>
-    <link rel = "stylesheet" type = "text/css" href = "../../css/style.css">
-
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
 </head>
 <body>
-
     <header>
         <div class="header-content">
             <div class="logo">Melk0revsHere</div>
@@ -16,26 +25,23 @@
                 <a href="../../index.html">INDEX</a>
                 <a href="../../whoami.html">WHOAMI?</a>
                 <a href="../../projects.html" class="active">PROJECTS</a>
-                <a href="https://github.com/mihinN">GITHUB</a>
-                <a href="https://www.linkedin.com/in/mihin-nimnaka">LINKDIN</a>
+                <a href="https://github.com/mihinN" target="_blank" rel="noopener noreferrer">GITHUB</a>
+                <a href="https://www.linkedin.com/in/mihin-nimnaka" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero" style = "padding: 10%">
+        <section class="hero" style="padding: 10%">
             <h1>RabbitHole</h1>
             <p>
-                RabbitHole is an Chrome Extesnion
+                RabbitHole is a Chrome Extension.
             </p>
         </section>
         <section style="margin-top: 3rem; display: flex; gap: 1rem; justify-content: center;">
-            <button class="button button-primary"><h3>DOWNLOAD FROM CHROME STORE</h3></button>
-
+            <button class="button button-primary" type="button">DOWNLOAD FROM CHROME STORE</button>
         </section>
-
-  </main>
-</div>
+    </main>
 
     <footer>
         <p>© 2025 Melk0reVShere</p>

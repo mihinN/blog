@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self';
+                   script-src 'self';
+                   style-src 'self' 'unsafe-inline';
+                   img-src 'self' data:;
+                   frame-ancestors 'none';
+                   base-uri 'self';
+                   form-action 'self';
+                   object-src 'none'">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <title>PROJECTS</title>
-    <link rel = "stylesheet" type="text/css" href = "css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+      /* Only color links inside the project list — not the whole page */
+      .hero a { color: #536EDF; }
+    </style>
 </head>
-<style>
-nav, a {
-  color:#536EDF;
-}
-</style>
 <body>
     <header>
         <div class="header-content">
@@ -19,22 +29,24 @@ nav, a {
                 <a href="index.html">INDEX</a>
                 <a href="whoami.html">WHOAMI?</a>
                 <a href="projects.html" class="active">PROJECTS</a>
-                <a href="#">GitHub</a>
+                <a href="https://github.com/mihinN" target="_blank" rel="noopener noreferrer">GITHUB</a>
             </nav>
         </div>
     </header>
 
     <main>
         <section class="hero about-hero">
-            0x01. THE-9 (Malware Detection Application) <a href = "#">SOURCE</a> <a href = "projects/the_9/the_9.html">DOCUMENT</a>
+            0x01. THE-9 (Malware Detection Application) <a href="#">SOURCE</a> <a href="projects/the_9/the_9.html">DOCUMENT</a>
             <br>
-            0x02. CVD Parser <a href = "#">SOURCE</a> <a href = "#">DOCUMENT</a>
+            0x02. CVD Parser <a href="#">SOURCE</a> <a href="#">DOCUMENT</a>
             <br>
-            0x03. Network sniifing tool <a href = "#">SOURCE</a> <a href = "#">DOCUMENT</a>
+            0x03. Network sniffing tool <a href="#">SOURCE</a> <a href="#">DOCUMENT</a>
             <br>
-            0x04. RabbitHole (Chrome Extesnion) <a href = "#">SOURCE</a> <a href = "projects/rabbitHole/rabbit_hole.html">DOCUMENT</a>
-            0x05. click this <a href = "verilog.txt">text_file</a>
-            0x06. Test news <a href = "news.txt"> test news </a>
+            0x04. RabbitHole (Chrome Extension) <a href="#">SOURCE</a> <a href="projects/rabbitHole/rabbit_hole.html">DOCUMENT</a>
+            <br>
+            0x05. click this <a href="verilog.txt">text_file</a>
+            <br>
+            0x06. Test news <a href="news.txt">test news</a>
         </section>
     </main>
 

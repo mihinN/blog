@@ -1,11 +1,14 @@
 // oneko.js: https://github.com/adryd325/oneko.js
+// Patched: fixed reduced-motion detection, aria-hidden assignment,
+// and sprite-file path resolution.
 
 (function oneko() {
-  const isReducedMotion =
-    window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
-    window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+  'use strict';
 
-  if (isReducedMotion) return;
+  // Fixed: matchMedia(...) returns a MediaQueryList, never === true.
+  // Only the `.matches` form is correct.
+  const reduceMotionMQ = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (reduceMotionMQ && reduceMotionMQ.matches) return;
 
   const nekoEl = document.createElement("div");
 
@@ -86,22 +89,28 @@
 
   function init() {
     nekoEl.id = "oneko";
-    nekoEl.ariaHidden = true;
+    // Fixed: correct DOM assignment is a string, not a boolean.
+    nekoEl.setAttribute("aria-hidden", "true");
     nekoEl.style.width = "32px";
     nekoEl.style.height = "32px";
     nekoEl.style.position = "fixed";
     nekoEl.style.pointerEvents = "none";
     nekoEl.style.imageRendering = "pixelated";
-    nekoEl.style.left = `${nekoPosX - 16}px`;
-    nekoEl.style.top = `${nekoPosY - 16}px`;
+    nekoEl.style.left = (nekoPosX - 16) + "px";
+    nekoEl.style.top  = (nekoPosY - 16) + "px";
     nekoEl.style.zIndex = 2147483647;
 
-    let nekoFile = "js/oneko.gif"
-    const curScript = document.currentScript
-    if (curScript && curScript.dataset.cat) {
-      nekoFile = curScript.dataset.cat
+    let nekoFile = "js/oneko.gif";
+    const curScript = document.currentScript;
+    if (curScript && curScript.dataset && curScript.dataset.cat) {
+      // Only allow same-origin relative paths for the sprite.
+      const candidate = curScript.dataset.cat;
+      if (!/^(https?:|\/\/|data:|javascript:)/i.test(candidate)) {
+        nekoFile = candidate;
+      }
     }
-    nekoEl.style.backgroundImage = `url(${nekoFile})`;
+    // Use CSS.escape to avoid any injection via the filename.
+    nekoEl.style.backgroundImage = "url(\"" + nekoFile.replace(/"/g, '\\"') + "\")";
 
     document.body.appendChild(nekoEl);
 
@@ -116,23 +125,18 @@
   let lastFrameTimestamp;
 
   function onAnimationFrame(timestamp) {
-    // Stops execution if the neko element is removed from DOM
-    if (!nekoEl.isConnected) {
-      return;
-    }
-    if (!lastFrameTimestamp) {
-      lastFrameTimestamp = timestamp;
-    }
+    if (!nekoEl.isConnected) return;
+    if (!lastFrameTimestamp) lastFrameTimestamp = timestamp;
     if (timestamp - lastFrameTimestamp > 100) {
-      lastFrameTimestamp = timestamp
-      frame()
+      lastFrameTimestamp = timestamp;
+      frame();
     }
     window.requestAnimationFrame(onAnimationFrame);
   }
 
   function setSprite(name, frame) {
     const sprite = spriteSets[name][frame % spriteSets[name].length];
-    nekoEl.style.backgroundPosition = `${sprite[0] * 32}px ${sprite[1] * 32}px`;
+    nekoEl.style.backgroundPosition = (sprite[0] * 32) + "px " + (sprite[1] * 32) + "px";
   }
 
   function resetIdleAnimation() {
@@ -143,29 +147,17 @@
   function idle() {
     idleTime += 1;
 
-    // every ~ 20 seconds
     if (
       idleTime > 10 &&
-      Math.floor(Math.random() * 200) == 0 &&
-      idleAnimation == null
+      Math.floor(Math.random() * 200) === 0 &&
+      idleAnimation === null
     ) {
-      let avalibleIdleAnimations = ["sleeping", "scratchSelf"];
-      if (nekoPosX < 32) {
-        avalibleIdleAnimations.push("scratchWallW");
-      }
-      if (nekoPosY < 32) {
-        avalibleIdleAnimations.push("scratchWallN");
-      }
-      if (nekoPosX > window.innerWidth - 32) {
-        avalibleIdleAnimations.push("scratchWallE");
-      }
-      if (nekoPosY > window.innerHeight - 32) {
-        avalibleIdleAnimations.push("scratchWallS");
-      }
-      idleAnimation =
-        avalibleIdleAnimations[
-          Math.floor(Math.random() * avalibleIdleAnimations.length)
-        ];
+      const available = ["sleeping", "scratchSelf"];
+      if (nekoPosX < 32) available.push("scratchWallW");
+      if (nekoPosY < 32) available.push("scratchWallN");
+      if (nekoPosX > window.innerWidth  - 32) available.push("scratchWallE");
+      if (nekoPosY > window.innerHeight - 32) available.push("scratchWallS");
+      idleAnimation = available[Math.floor(Math.random() * available.length)];
     }
 
     switch (idleAnimation) {
@@ -175,9 +167,7 @@
           break;
         }
         setSprite("sleeping", Math.floor(idleAnimationFrame / 4));
-        if (idleAnimationFrame > 192) {
-          resetIdleAnimation();
-        }
+        if (idleAnimationFrame > 192) resetIdleAnimation();
         break;
       case "scratchWallN":
       case "scratchWallS":
@@ -185,9 +175,7 @@
       case "scratchWallW":
       case "scratchSelf":
         setSprite(idleAnimation, idleAnimationFrame);
-        if (idleAnimationFrame > 9) {
-          resetIdleAnimation();
-        }
+        if (idleAnimationFrame > 9) resetIdleAnimation();
         break;
       default:
         setSprite("idle", 0);
@@ -200,7 +188,7 @@
     frameCount += 1;
     const diffX = nekoPosX - mousePosX;
     const diffY = nekoPosY - mousePosY;
-    const distance = Math.sqrt(diffX ** 2 + diffY ** 2);
+    const distance = Math.sqrt(diffX * diffX + diffY * diffY);
 
     if (distance < nekoSpeed || distance < 48) {
       idle();
@@ -212,18 +200,17 @@
 
     if (idleTime > 1) {
       setSprite("alert", 0);
-      // count down after being alerted before moving
       idleTime = Math.min(idleTime, 7);
       idleTime -= 1;
       return;
     }
 
-    let direction;
-    direction = diffY / distance > 0.5 ? "N" : "";
+    let direction = "";
+    direction += diffY / distance > 0.5 ? "N" : "";
     direction += diffY / distance < -0.5 ? "S" : "";
     direction += diffX / distance > 0.5 ? "W" : "";
     direction += diffX / distance < -0.5 ? "E" : "";
-    setSprite(direction, frameCount);
+    if (direction) setSprite(direction, frameCount);
 
     nekoPosX -= (diffX / distance) * nekoSpeed;
     nekoPosY -= (diffY / distance) * nekoSpeed;
@@ -231,8 +218,8 @@
     nekoPosX = Math.min(Math.max(16, nekoPosX), window.innerWidth - 16);
     nekoPosY = Math.min(Math.max(16, nekoPosY), window.innerHeight - 16);
 
-    nekoEl.style.left = `${nekoPosX - 16}px`;
-    nekoEl.style.top = `${nekoPosY - 16}px`;
+    nekoEl.style.left = (nekoPosX - 16) + "px";
+    nekoEl.style.top  = (nekoPosY - 16) + "px";
   }
 
   init();
