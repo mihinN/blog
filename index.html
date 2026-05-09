@@ -446,12 +446,7 @@
       const chatFooter   = document.getElementById('chatFooter');
       const apologizeBtn = document.getElementById('apologize-btn');
 
-      // ===== SAFE HTML BUILDER =====
-      // Instead of `innerHTML = ...` on untrusted strings, we use a small
-      // schema: each message is a list of segments. "text" segments become
-      // textContent (safe). "span" segments become <span class="x">text</span>
-      // with the class whitelisted. This closes the XSS door even if you
-      // later source messages from URLs, localStorage, or a server.
+
       const ALLOWED_CLASSES = new Set(['era', 'name', 'kind', 'flex-text', 'cmd']);
 
       function seg(cls, text) { return { cls, text }; }
